@@ -1,0 +1,1193 @@
+<title>第一次期中考英語文覆盤(第71屆): 我思故我在 我在故我思</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&family=Spectral:ital,wght@0,500;1,400&display=swap">
+<style>
+/* Layout: single reading column; sticky section nav; question cards with inline collapsible 詳解 */
+:root{
+  --paper:#f7f4ee; --ink:#20242c; --ink-soft:#5b6472; --line:#ded7ca;
+  --card:#fffdf9; --seal:#9a3b2f; --jade:#2f6b5c; --amber:#b2792a;
+  --shadow:0 1px 2px rgba(32,36,44,.06),0 8px 24px rgba(32,36,44,.05);
+  --font-display:"Noto Serif TC",Spectral,"Songti TC",serif;
+  --font-body:"Noto Sans TC","Helvetica Neue",Arial,sans-serif;
+  --font-en:Spectral,"Noto Serif TC",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#15181d; --ink:#e8e4db; --ink-soft:#9aa3ae; --line:#2d333c;
+  --card:#1c2027; --seal:#d9796a; --jade:#6cbda7; --amber:#dfae63;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#15181d; --ink:#e8e4db; --ink-soft:#9aa3ae; --line:#2d333c;
+  --card:#1c2027; --seal:#d9796a; --jade:#6cbda7; --amber:#dfae63;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35);
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.75;margin:0}
+.wrap{max-width:62rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 4rem}
+header.hd{border-bottom:1px solid var(--line);padding-block:2.6rem 1.6rem}
+.kicker{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--seal);font-weight:700}
+h1{font-family:var(--font-display);font-size:clamp(1.65rem,4.4vw,2.6rem);line-height:1.3;margin:.5rem 0 .3rem;text-wrap:balance}
+h1 .motto{display:block;font-size:.58em;color:var(--ink-soft);font-weight:500;margin-top:.45rem;letter-spacing:.04em}
+.meta{font-size:.85rem;color:var(--ink-soft)}
+nav.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--paper);border-bottom:1px solid var(--line);margin-bottom:1.6rem}
+nav.jump .inner{display:flex;gap:.35rem;overflow-x:auto;padding-block:.6rem;scrollbar-width:thin}
+nav.jump .goto{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;padding-block:.6rem .1rem;font-size:.85rem}
+nav.jump .goto label{font-weight:700;color:var(--seal);white-space:nowrap}
+nav.jump .goto input{width:5.5rem;font-family:var(--font-en);font-size:1rem;font-variant-numeric:tabular-nums;padding:.25rem .5rem;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+nav.jump .goto .hint{color:var(--ink-soft);font-size:.8rem}
+nav.jump .goto .hint.warn{color:var(--seal);font-weight:700}
+.q{scroll-margin-top:8.5rem}
+.q.flash{border-color:var(--amber);box-shadow:0 0 0 3px color-mix(in srgb,var(--amber) 38%,transparent),var(--shadow)}
+@media (prefers-reduced-motion:no-preference){.q{transition:box-shadow .3s ease,border-color .3s ease}}
+nav.jump a{flex:0 0 auto;font-size:.8rem;text-decoration:none;color:var(--ink-soft);border:1px solid var(--line);border-radius:999px;padding:.25rem .7rem;white-space:nowrap}
+nav.jump a:hover,nav.jump a:focus-visible{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+h2.part{font-family:var(--font-display);font-size:1.5rem;margin:2.8rem 0 .4rem;padding-top:.6rem;border-top:3px double var(--line)}
+h3.sec{font-family:var(--font-display);font-size:1.12rem;margin:2.2rem 0 .2rem;color:var(--seal);scroll-margin-top:4.5rem}
+.sec-note{font-size:.84rem;color:var(--ink-soft);margin:0 0 1rem}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0 0}
+button{font-family:inherit;font-size:.85rem;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:.4rem .85rem}
+button:hover{border-color:var(--ink-soft)}
+button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.passage{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:10px;padding:1rem 1.1rem;margin:.9rem 0 1.4rem;box-shadow:var(--shadow)}
+.passage p{margin:0 0 .7rem;font-family:var(--font-en);font-size:1rem}
+.passage p:last-child{margin-bottom:0}
+.passage .ptitle{font-family:var(--font-body);font-weight:700;font-size:.82rem;letter-spacing:.1em;color:var(--ink-soft);margin-bottom:.6rem;text-transform:uppercase}
+.bank{display:flex;flex-wrap:wrap;gap:.3rem .45rem;margin-top:.8rem;padding-top:.7rem;border-top:1px dashed var(--line)}
+.bank span{font-family:var(--font-en);font-size:.88rem;border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem}
+.q{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;margin:0 0 .8rem;box-shadow:var(--shadow);min-width:0}
+.qhead{display:flex;gap:.6rem;align-items:baseline}
+.qno{font-family:var(--font-en);font-weight:700;color:var(--seal);font-variant-numeric:tabular-nums;flex:0 0 auto}
+.stem{font-family:var(--font-en);font-size:1rem;min-width:0}
+.stem .blank{color:var(--seal);font-weight:700}
+.opts{list-style:none;margin:.55rem 0 0;padding:0;display:grid;gap:.15rem}
+.opts li{font-family:var(--font-en);font-size:.96rem;display:flex;gap:.45rem}
+.opts li b{flex:0 0 1.6rem;font-weight:700;color:var(--ink-soft)}
+.toggle{margin-top:.7rem;border-color:var(--jade);color:var(--jade);font-weight:700}
+.toggle[aria-expanded="true"]{background:var(--jade);color:var(--paper);border-color:var(--jade)}
+.sol{margin-top:.75rem;padding-top:.75rem;border-top:1px dashed var(--line);font-size:.93rem}
+.ansline{font-weight:700;color:var(--jade);margin:0 0 .5rem}
+.ansline .key{font-family:var(--font-en);font-size:1.05rem}
+.sol h4{font-size:.78rem;letter-spacing:.12em;margin:.9rem 0 .35rem;color:var(--ink-soft);text-transform:uppercase}
+.sol h4:first-of-type{margin-top:0}
+.sol p{margin:0 0 .5rem}
+.sol ul{margin:.2rem 0 .5rem;padding-left:0;list-style:none;display:grid;gap:.4rem}
+.sol ul li{display:flex;gap:.5rem}
+.sol ul li .ol{flex:0 0 1.7rem;font-family:var(--font-en);font-weight:700}
+.sol .ok .ol{color:var(--jade)}
+.sol .no .ol{color:var(--ink-soft)}
+.concept{background:color-mix(in srgb,var(--amber) 12%,transparent);border-radius:8px;padding:.55rem .7rem;font-size:.9rem}
+.en{font-family:var(--font-en)}
+.care{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.15rem;margin:1rem 0;box-shadow:var(--shadow)}
+.care h3{font-family:var(--font-display);font-size:1.1rem;margin:0 0 .5rem;color:var(--jade)}
+.care .bi{display:grid;gap:1rem;grid-template-columns:1fr}
+@media(min-width:48rem){.care .bi{grid-template-columns:1fr 1fr}}
+.care .bi>div{min-width:0}
+.care .bi .lab{font-size:.74rem;letter-spacing:.16em;color:var(--ink-soft);text-transform:uppercase;font-weight:700}
+.care .bi .en p{font-family:var(--font-en)}
+.anchor-quote{border-left:3px solid var(--seal);padding-left:.9rem;margin:1rem 0;font-size:.95rem}
+.anchor-quote strong{color:var(--seal)}
+label.qlab{display:block;font-weight:700;margin:1.3rem 0 .35rem;font-size:.98rem}
+label.qlab .sub{display:block;font-weight:400;font-size:.85rem;color:var(--ink-soft);font-family:var(--font-en)}
+textarea{width:100%;min-height:6.5rem;font-family:inherit;font-size:.95rem;line-height:1.7;padding:.7rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);resize:vertical}
+.saved{font-size:.8rem;color:var(--jade);min-height:1.2rem}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink-soft)}
+@media (prefers-reduced-motion:no-preference){.sol{animation:fade .18s ease-out}}
+@keyframes fade{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
+</style>
+
+<div class="wrap">
+<header class="hd">
+  <div class="kicker">桃園市立武陵高級中學 · 115 學年度第一學期 · 高一第一次期中考</div>
+  <h1>第一次期中考英語文覆盤（第71屆）
+    <span class="motto">我思故我在　我在故我思</span></h1>
+  <p class="meta">50 分鐘自主檢討學習單 ｜ 第一部分：全卷詳解（點【詳解】展開、再點收回）　第二部分：考後心情覆盤</p>
+</header>
+
+<nav class="jump">
+  <div class="goto">
+    <label for="qjump">🔎 前往題號</label>
+    <input id="qjump" type="number" min="1" max="95" step="1" inputmode="numeric" placeholder="1–95" autocomplete="off">
+    <span class="hint" id="gotoMsg">輸入數字即跳到該題並展開詳解（選擇題 1–82，非選題 83–95）</span>
+  </div>
+  <div class="inner" id="jumpnav"></div>
+</nav>
+
+<h2 class="part">第一部分　全卷詳解</h2>
+<p class="sec-note">每一題的【詳解】預設隱藏。按下按鈕才展開，再按一次自動收回。詳解包含三層：① 題目詳解　② 每個選項的詞性／中文／用法與對錯理由　③ 本題測驗的閱讀與文法觀念。<br><span style="color:var(--seal)">※ 選擇題 1–82 之答案依學校公布之答案卡；非選題 83–95 依學校答案卷。</span></p>
+<div class="tools">
+  <button type="button" id="openAll">全部展開</button>
+  <button type="button" id="closeAll">全部收回</button>
+</div>
+
+<div id="paper"></div>
+
+<h2 class="part">第二部分　考後的你，也需要被照顧</h2>
+<div id="care"></div>
+
+<footer>
+  <p>覆盤不是為了責備自己，而是為了讓下一次的努力更有方向。<span class="en">Reviewing is not about blame. It is about aiming your next effort better.</span></p>
+  <p>作答內容僅存在你自己的瀏覽器中，不會上傳；換裝置或清除瀏覽資料後會消失，重要內容請另行複製保存。</p>
+</footer>
+</div>
+<script>
+const SECTIONS = [];
+
+/* ============ I. Listening (8%) ============ */
+SECTIONS.push({id:"s1", title:"I. Listening　聽力測驗（8%）", note:"Part A-I 對話＋單題（4%）／Part A-II 一段對話＋兩題（2%）／Part B 一段獨白＋兩題（2%）。詳解中附上完整聽力稿，請對照自己聽錯的地方：是「沒聽到」還是「聽到了卻推不出來」。", items:[
+{n:1, stem:'What does the man say about his project?　<span class="en">(Unit 2)</span>',
+ opts:[["A","He can’t find any examples."],["B","He showed it to the teacher yesterday."],["C","It’s not finished yet."],["D","The teacher really liked it."]],
+ ans:"C",
+ script:"M: Hey, Tanya! Have you finished your project?<br>W: Yeah, I just finished it last night. It took me so long that I feel very tired today. How’s your project?<br>M: My project is taking shape. I will show it to the teacher tomorrow.<br>W: Nice! Just don’t forget to add some good examples.",
+ exp:"關鍵句是男生說的 <span class=\"en\">“My project is taking shape. I will show it to the teacher tomorrow.”</span>　<span class=\"en\">take shape</span>（逐漸成形）表示「正在成形、還沒完成」，加上下一句用未來式 <span class=\"en\">will show</span>（明天才要給老師看），可推論：他的報告還沒做完。女生才是「昨晚剛完成」的人，別把兩人的資訊張冠李戴。",
+ notes:[["A","<span class=\"en\">can’t find any examples</span>（動詞片語）找不到任何例子。女生只是「提醒」他記得加好例子（<span class=\"en\">don’t forget to add</span>），並不是男生找不到例子。把『提醒』誤聽成『抱怨』就會選這個。"],
+        ["B","<span class=\"en\">showed it to the teacher yesterday</span>（過去式）昨天給老師看了。原文是 <span class=\"en\">will show ... tomorrow</span>（未來、明天），時間與時態都相反。"],
+        ["C","<span class=\"en\">It’s not finished yet.</span>（<span class=\"en\">not ... yet</span> 尚未）還沒完成。正是 <span class=\"en\">take shape</span>＋<span class=\"en\">will show tomorrow</span> 的合理推論，為正解。"],
+        ["D","<span class=\"en\">really liked it</span>（過去式）老師很喜歡。老師還沒看到，無從喜歡，屬無根據的過度推論。"]],
+ concept:"聽力推論題（inference）＋時態線索。<span class=\"en\">take shape</span> 這類片語語意，以及 <span class=\"en\">will / tomorrow</span> 的未來時間標記，就是判斷「完成與否」的依據；同時測驗你能否分辨「男生的事」與「女生的事」（speaker attribution）。"},
+
+{n:2, stem:'Why WON’T the woman buy the computer?　<span class="en">(Unit 2)</span>',
+ opts:[["A","She wants a newer model."],["B","It’s too expensive right now."],["C","She doesn’t like how it looks."],["D","It doesn’t meet her needs."]],
+ ans:"B",
+ script:"W: I need to buy a new computer for school. Let’s go into this store.<br>M: Sure. Look at this one! It seems really fast and powerful.<br>W: You're right. That would be perfect, but it’s out of reach for me right now.<br>M: Oh, don’t worry. There are still many other choices. Let’s look for something else.",
+ exp:"關鍵片語 <span class=\"en\">out of reach</span>（字面「伸手拿不到」，此處指「買不起、超出能力範圍」）。女生先承認 <span class=\"en\">That would be perfect</span>（很完美），再用 <span class=\"en\">but</span> 轉折說 <span class=\"en\">out of reach for me right now</span>，加上 <span class=\"en\">right now</span>（現在），可知阻礙是「價格／預算」。",
+ notes:[["A","<span class=\"en\">a newer model</span>（名詞片語）更新的機型。她要的是 <span class=\"en\">a new computer</span>，但沒有抱怨這台太舊。"],
+        ["B","<span class=\"en\">too expensive</span>（形容詞片語）太貴。<span class=\"en\">out of reach</span> 的同義改寫（paraphrase），為正解。聽力正解常是原文片語的『換句話說』，不是原字重現。"],
+        ["C","<span class=\"en\">how it looks</span>（名詞子句）外觀。她根本沒提外觀；<span class=\"en\">perfect</span> 反而是肯定。"],
+        ["D","<span class=\"en\">meet one’s needs</span>（動詞片語）符合需求。她說 <span class=\"en\">That would be perfect</span>，正好相反。"]],
+ concept:"片語語意推論＋轉折詞聽辨。<span class=\"en\">but</span> 之後才是說話者真正的重點；<span class=\"en\">out of reach</span> 屬「比喻式用法（metaphor）」，必須由字面推到引申義，再與選項做 paraphrase 配對。"},
+
+{n:3, stem:'What is the speakers’ boss doing?　<span class="en">(Unit 2)</span>',
+ opts:[["A","Staying in a meeting room."],["B","Giving a talk in the office."],["C","Moving around and preparing things."],["D","Hosting another meeting in the office."]],
+ ans:"C",
+ script:"W: The big important meeting is today. All the company owners are in the office today.<br>M: I’m a little nervous. I have to help our boss give a talk and host the whole meeting.<br>W: Good luck! What is our boss doing now?<br>M: She is buzzing around the office getting things ready.",
+ exp:"問句是 <span class=\"en\">What is our boss doing <u>now</u>?</span>，答句 <span class=\"en\">She is buzzing around the office getting things ready.</span>　<span class=\"en\">buzz around</span>（像蜜蜂般嗡嗡地到處飛＝忙進忙出地走動）＋ <span class=\"en\">getting things ready</span>（把東西準備好），對應「到處走動並做準備」。",
+ notes:[["A","<span class=\"en\">staying in a meeting room</span>（動名詞片語）待在會議室。<span class=\"en\">buzzing around</span> 是「移動中」，與 <span class=\"en\">staying</span>（停留）矛盾。"],
+        ["B","<span class=\"en\">giving a talk</span>（動詞片語）發表演說。演講是稍後會議才要做的事，而且男生說他要「幫老闆」演講與主持，現在尚未開始。"],
+        ["C","<span class=\"en\">moving around and preparing things</span> 到處走動並準備事物。<span class=\"en\">buzz around + get things ready</span> 的直譯改寫，為正解。"],
+        ["D","<span class=\"en\">host another meeting</span>（動詞片語）主持另一場會議。今天只有「一場」重要會議（<span class=\"en\">the big important meeting</span>），<span class=\"en\">another</span> 是憑空增加的資訊。"]],
+ concept:"動態動詞片語的意象理解（<span class=\"en\">buzz around</span> 為源自昆蟲的比喻）＋現在進行式所指的「說話當下」。同時測驗「誰做什麼、何時做」的時間軸分辨。"},
+
+{n:4, stem:'Why did the man buy a new shirt?　<span class="en">(Unit 2)</span>',
+ opts:[["A","He didn’t have a shirt like it."],["B","He didn’t have many shirts."],["C","It was high quality."],["D","It was a good price."]],
+ ans:"D",
+ script:"M: Do you like my new shirt? I think it has become my new favorite.<br>W: It looks great. I love its design, but you have a lot of similar shirts. Why did you buy it?<br>M: It was really affordable. I bought it from someone online.<br>W: Show me how! I should try that, too.",
+ exp:"女生直接問 <span class=\"en\">Why did you buy it?</span>，男生回答 <span class=\"en\">It was really affordable.</span>　<span class=\"en\">affordable</span>（形容詞，買得起的、價格實惠的）＝價格好，故選 <span class=\"en\">a good price</span>。",
+ notes:[["A","<span class=\"en\">a shirt like it</span> 像這樣的襯衫。女生明說 <span class=\"en\">you have a lot of similar shirts</span>（你有很多類似的），與此選項相反。"],
+        ["B","<span class=\"en\">didn’t have many shirts</span> 襯衫不多。同上，<span class=\"en\">a lot of similar shirts</span> 已否證。"],
+        ["C","<span class=\"en\">high quality</span>（名詞片語）高品質。<span class=\"en\">affordable</span> 講的是價格，不是品質；兩者不可互換。"],
+        ["D","<span class=\"en\">a good price</span> 好價格。<span class=\"en\">affordable</span> 的同義改寫，為正解。"]],
+ concept:"關鍵形容詞語意辨析（<span class=\"en\">affordable</span> 價格 vs. <span class=\"en\">high quality</span> 品質）＋以問句（<span class=\"en\">Why ...?</span>）定位答案所在位置的聽力策略。"},
+
+{n:5, stem:'Why was the woman worried about the sales of her book?　<span class="en">(Unit 2)</span>',
+ opts:[["A","It was not about making money."],["B","It took readers too much time to finish."],["C","It included a lot of hard words."],["D","It talked about business topics."]],
+ ans:"A",
+ script:"W: Wow! My book is on the bestseller list.<br>M: Congratulations! I love your book, too. I knew you could do it.<br>W: Thank you for saying that. Actually, I was quite worried when my book was released. Many popular books these days are about building wealth. However, my book is just about simple things in life.<br>M: You know what? That’s why people like it! It’s simple, yet real and deep. That’s something hard to find now.<br>W: I guess so. It feels good to see that there are still many people who care about these small things.<br>M: Yeah, and I believe your work will become even more meaningful over time.",
+ exp:"擔心的理由藏在對比句型裡：<span class=\"en\">Many popular books ... are about building wealth. <u>However</u>, my book is just about simple things in life.</span>　暢銷書多談「累積財富」（<span class=\"en\">building wealth</span>），而她的書只談生活小事＝「不是在談賺錢」，故選 (A)。",
+ notes:[["A","<span class=\"en\">not about making money</span> 與賺錢無關。<span class=\"en\">building wealth</span> 的反面改寫，為正解。"],
+        ["B","<span class=\"en\">took ... too much time to finish</span>（<span class=\"en\">take + 人 + 時間 + to V</span>）花太多時間讀完。對話完全沒提閱讀時間長短。"],
+        ["C","<span class=\"en\">hard words</span> 難字。沒提到用字難易；<span class=\"en\">simple</span> 形容的是「主題簡單」而非單字。"],
+        ["D","<span class=\"en\">business topics</span> 商業主題。這是「別人的書」的特徵，不是她的書。此選項典型地把對比句的兩邊對調（混淆對照組）。"]],
+ concept:"長對話中的對比結構聽辨（<span class=\"en\">However</span> 前後為兩個不同主詞的書），以及「指涉對象」判斷——測驗你能否確認 <span class=\"en\">my book</span> 與 <span class=\"en\">many popular books</span> 分別對應哪些描述。"},
+
+{n:6, stem:'What does the man say he believes about the woman’s book?　<span class="en">(Unit 2)</span>',
+ opts:[["A","It will be sold in different editions."],["B","It will become popular abroad."],["C","It will become more expensive."],["D","It will be valued even more in the future."]],
+ ans:"D",
+ script:"（同第 5 題對話）M: Yeah, and I believe your work will become even more meaningful over time.",
+ exp:"關鍵句 <span class=\"en\">I believe your work will become even more meaningful <u>over time</u>.</span>　<span class=\"en\">over time</span>（隨著時間過去）＋ <span class=\"en\">even more meaningful</span>（更有意義）＝未來會更被看重，故選 (D) <span class=\"en\">valued even more in the future</span>。",
+ notes:[["A","<span class=\"en\">editions</span>（名詞）版本。對話未提再版或不同版本。"],
+        ["B","<span class=\"en\">abroad</span>（副詞）在國外。沒有任何國外市場的資訊。"],
+        ["C","<span class=\"en\">more expensive</span> 更貴。<span class=\"en\">meaningful</span>（有意義）被誤解為 <span class=\"en\">valuable＝值錢</span>。<span class=\"en\">value</span> 作動詞是「重視」，不等於「漲價」，這是本題最容易踩的陷阱。"],
+        ["D","<span class=\"en\">be valued</span>（被動：被重視）＋ <span class=\"en\">in the future</span>。<span class=\"en\">more meaningful over time</span> 的同義改寫，為正解。"]],
+ concept:"同義改寫（paraphrase）與一字多義（polysemy）：<span class=\"en\">value</span> 可指「價格」也可指「重視」，本題考你依語境選義。另測驗 <span class=\"en\">over time</span> 這類時間副詞片語所暗示的未來趨勢。"},
+
+{n:7, stem:'Why does the speaker tell the number of scooters in Taiwan?',
+ opts:[["A","To discuss the problems of scooters."],["B","To show how common scooters are."],["C","To explain a new trend in scooters."],["D","To share today’s best-selling scooter model."]],
+ ans:"B",
+ script:"Scooters are everywhere in Taiwan. By early 2025, there were over 14.6 million registered scooters: about 63 for every 100 people. They are popular because they are convenient. Scooters can move through narrow alleys and heavy traffic more easily than cars. They are also easier to park. Their number grew with Taiwan’s economy in the 1950s as local industry rose. One famous model was the Dio. It was made by Honda and first appeared in Japan in 1985. That is why early models still had the Honda mark on the case. Later, Taiwanese scooter makers like Sanyang made the Dio locally, and the Honda mark was removed. Today, many scooter fans value those early models. An old Dio with the Honda mark on it is truly special to them. (Unit 2)",
+ exp:"此題問「說話者為何提出數據」，屬「寫作目的／功能題」。數據（<span class=\"en\">14.6 million</span>、<span class=\"en\">63 for every 100 people</span>）緊接在主題句 <span class=\"en\">Scooters are everywhere in Taiwan.</span> 之後，功能是為主題句「到處都是」提供證據，即說明機車「有多普遍」。",
+ notes:[["A","<span class=\"en\">problems</span>（名詞）問題。全文談的是便利與懷舊價值，沒有負面論述。"],
+        ["B","<span class=\"en\">common</span>（形容詞）普遍的、常見的。對應主題句 <span class=\"en\">everywhere</span>，為正解。"],
+        ["C","<span class=\"en\">a new trend</span> 新趨勢。數量成長是 1950 年代起的歷史背景，不是「新」趨勢。"],
+        ["D","<span class=\"en\">best-selling model</span> 最暢銷車款。文中 Dio 是 <span class=\"en\">famous</span>（有名的）且屬早期車款，並未說它是「今天最暢銷」。"]],
+ concept:"功能／目的題（function question）：考的不是數字本身，而是數字在段落中扮演的角色（supporting evidence）。解法是回看數據前後的主題句，而非記住數字。"},
+
+{n:8, stem:'What do we learn about the Dio?',
+ opts:[["A","Its early models were made by Honda."],["B","Its original color made it extra special."],["C","It was first made in Taiwan."],["D","Its models in Taiwan still have Honda on the seats."]],
+ ans:"A",
+ script:"（同第 7 題獨白）One famous model was the Dio. It was made by Honda and first appeared in Japan in 1985. ... Later, Taiwanese scooter makers like Sanyang made the Dio locally, and the Honda mark was removed.",
+ exp:"<span class=\"en\">It was made by Honda and first appeared in Japan in 1985</span> 指出早期 Dio 由 Honda 製造、首現於日本；<span class=\"en\">Later, Taiwanese ... made the Dio locally</span> 才是台灣在地生產。故 (A) 正確。",
+ notes:[["A","<span class=\"en\">early models</span> 早期車款＋被動語態 <span class=\"en\">were made by Honda</span>。與原文一致，為正解。"],
+        ["B","<span class=\"en\">original color</span> 原廠顏色。原文談的是 <span class=\"en\">the Honda mark</span>（本田標誌），不是顏色——細節被偷換。"],
+        ["C","<span class=\"en\">first made in Taiwan</span> 最早在台灣製造。原文是 <span class=\"en\">first appeared in Japan</span>，先日本後台灣，順序顛倒。"],
+        ["D","<span class=\"en\">on the seats</span> 在座墊上。原文兩處都是 <span class=\"en\">on the case</span>（在車殼上），且後期台灣版 <span class=\"en\">the Honda mark was removed</span>（標誌被移除）——位置與有無都錯。"]],
+ concept:"細節題（detail）＋被動語態理解（<span class=\"en\">be made by / be removed</span>）。陷阱設計在「時間順序」與「位置用詞」的細微替換，測驗你是否聽到介系詞片語等細部訊息。"}
+]});
+
+/* ============ II. Level 4 Vocabulary (10%) ============ */
+SECTIONS.push({id:"s2", title:"II. Level 4 Vocabulary　字彙（10%，一題一分）", note:"字彙題不是「背過就會」，而是「看懂空格的語意角色」。每題先問自己：空格要填的是什麼詞性？句中哪個字是語意線索（collocation 或因果關係）？", items:[
+{n:9, stem:'With the school fair on the <span class="blank">_____</span>, every class is planning what they want to sell on that day.',
+ opts:[["A","catalog"],["B","horizon"],["C","loyalty"],["D","manual"]],
+ ans:"B",
+ exp:"線索在 <span class=\"en\">With ... on the ____</span> 這個固定搭配，以及後半句「各班正在規劃那天要賣什麼」——表示校慶「即將到來」。<span class=\"en\">on the horizon</span>（在地平線上＝即將發生、近在眼前）為固定片語。此處 <span class=\"en\">With + N + 介副詞片語</span> 是「with 的附帶狀況用法」，相當於 <span class=\"en\">Since the school fair is coming soon</span>。",
+ notes:[["A","<span class=\"en\">catalog</span>（n. 目錄／商品型錄；v. 編目）。<span class=\"en\">on the catalog</span> 不成片語，且語意與「即將到來」無關。"],
+        ["B","<span class=\"en\">horizon</span>（n. 地平線；視野）。<span class=\"en\">on the horizon</span>＝即將發生，為比喻用法（把未來的事比喻成地平線上剛出現的船影），為正解。延伸：<span class=\"en\">broaden one’s horizons</span> 拓展視野。"],
+        ["C","<span class=\"en\">loyalty</span>（n. 忠誠）。常搭 <span class=\"en\">loyalty to sb.</span>，與時間概念無關。"],
+        ["D","<span class=\"en\">manual</span>（n. 手冊；adj. 手動的）。<span class=\"en\">on the manual</span> 不合語法語意。"]],
+ concept:"片語搭配（collocation）＋介系詞片語的比喻義。本題測驗你是否把 <span class=\"en\">horizon</span> 從「地平線」的字面義延伸到「即將發生」的時間義，而非單純背中文。"},
+
+{n:10, stem:'Even though it was not Quinn’s fault that the plate cracked, she still felt <span class="blank">_____</span>.',
+ opts:[["A","diverse"],["B","guilty"],["C","mutual"],["D","urgent"]],
+ ans:"B",
+ exp:"<span class=\"en\">Even though</span>（雖然）為讓步轉折：「盤子破了不是她的錯」→ 但她仍然感到……，空格必須是與「錯／責任」相關、且能形容人心理狀態的形容詞，故為 <span class=\"en\">guilty</span>（感到有罪惡感的）。",
+ notes:[["A","<span class=\"en\">diverse</span>（adj. 多樣的、各式各樣的）。修飾群體或種類（<span class=\"en\">a diverse culture</span>），不能形容個人情緒。"],
+        ["B","<span class=\"en\">guilty</span>（adj. 有罪的；感到愧疚的）。<span class=\"en\">feel guilty (about sth.)</span> 為固定用法，與 <span class=\"en\">fault</span>（過錯）同一語意場，為正解。"],
+        ["C","<span class=\"en\">mutual</span>（adj. 相互的、共同的），如 <span class=\"en\">mutual respect</span>（互相尊重）。情緒須是雙方互動才用，此處只有她一人。"],
+        ["D","<span class=\"en\">urgent</span>（adj. 緊急的）。修飾事情（<span class=\"en\">an urgent call</span>），不修飾「人對過錯的感受」。"]],
+ concept:"讓步連接詞（<span class=\"en\">Even though</span>）所建立的語意反差＋<span class=\"en\">feel + adj.</span> 的連綴動詞結構。解題靠的是「語意場」（fault → guilty）而非逐字翻譯。"},
+
+{n:11, stem:'Look closely! The PE teacher will <span class="blank">_____</span> the correct way to hit the ball.',
+ opts:[["A","abandon"],["B","circulate"],["C","demonstrate"],["D","overcome"]],
+ ans:"C",
+ exp:"<span class=\"en\">Look closely!</span>（仔細看！）暗示接下來會有「看得到的動作」；受詞是 <span class=\"en\">the correct way to hit the ball</span>（正確的擊球方式），故動詞應為「示範」。",
+ notes:[["A","<span class=\"en\">abandon</span>（v. 遺棄、放棄），如 <span class=\"en\">abandon a plan</span>。放棄正確打法與「仔細看」矛盾。"],
+        ["B","<span class=\"en\">circulate</span>（v. 循環、流通、傳閱），如 <span class=\"en\">Blood circulates.</span>／<span class=\"en\">circulate a memo</span>。無法接「方法」。"],
+        ["C","<span class=\"en\">demonstrate</span>（v. 示範、展示；證明）。<span class=\"en\">demonstrate how to V / the way to V</span> 為常見搭配，呼應 <span class=\"en\">Look closely</span>，為正解。名詞 <span class=\"en\">demonstration</span>。"],
+        ["D","<span class=\"en\">overcome</span>（v. 克服），受詞多為困難（<span class=\"en\">overcome an obstacle</span>）。接「方法」不合語意。"]],
+ concept:"由前句的語用線索（祈使句 <span class=\"en\">Look closely!</span>）推測動詞類型，並檢查「動詞＋受詞」的搭配合理性。這是閱讀中的 details & logic 連結能力。"},
+
+{n:12, stem:'In every subject, you must learn the <span class="blank">_____</span> rules before you can move on to more complex tasks.',
+ opts:[["A","fundamental"],["B","grammatical"],["C","identical"],["D","outstanding"]],
+ ans:"A",
+ exp:"句中 <span class=\"en\">before you can move on to more <u>complex</u> tasks</span>（才能進到更複雜的任務）形成「簡單 → 複雜」的對比；又有 <span class=\"en\">In every subject</span>（每一個科目），故空格須為「基本的」，與 <span class=\"en\">complex</span> 相對。",
+ notes:[["A","<span class=\"en\">fundamental</span>（adj. 基本的、根本的）＝<span class=\"en\">basic</span>。與 <span class=\"en\">complex</span> 構成對比，且適用於所有科目，為正解。"],
+        ["B","<span class=\"en\">grammatical</span>（adj. 文法的）。只適用於語言科目，與 <span class=\"en\">In every subject</span> 衝突——這是「語意範圍過窄」的典型錯誤選項。"],
+        ["C","<span class=\"en\">identical</span>（adj. 完全相同的），<span class=\"en\">be identical to/with</span>。「相同的規則」無法與「複雜任務」形成先後邏輯。"],
+        ["D","<span class=\"en\">outstanding</span>（adj. 傑出的；未付的）。規則不會「傑出」，搭配不當。"]],
+ concept:"對比詞所建立的語意軸線（<span class=\"en\">fundamental ↔ complex</span>）＋選項「語意範圍」的檢核。注意 (B) 文法上完全通順，只是範圍不符：這正是高分群常失分之處。"},
+
+{n:13, stem:'The man was <span class="blank">_____</span> of slipping drugs into his employee’s water. It was a serious crime.',
+ opts:[["A","accused"],["B","enlarged"],["C","imposed"],["D","witnessed"]],
+ ans:"A",
+ exp:"句型線索是 <span class=\"en\">be ____ <u>of</u> + V-ing</span>，加上第二句 <span class=\"en\">It was a serious crime.</span>（這是嚴重的犯罪），可知為「被指控做某事」。<span class=\"en\">accuse sb. of + V-ing/N</span>（指控某人某事）→ 被動 <span class=\"en\">be accused of</span>。",
+ notes:[["A","<span class=\"en\">accuse</span>（v. 指控）；<span class=\"en\">be accused of V-ing</span> 為正解。同義：<span class=\"en\">be charged with</span>（注意介系詞不同）。"],
+        ["B","<span class=\"en\">enlarge</span>（v. 擴大），<span class=\"en\">enlarge a photo</span>。不接 <span class=\"en\">of</span>，語意亦不符。"],
+        ["C","<span class=\"en\">impose</span>（v. 強加、課徵），<span class=\"en\">impose a tax on sb.</span>，搭配 <span class=\"en\">on</span> 而非 <span class=\"en\">of</span>。"],
+        ["D","<span class=\"en\">witness</span>（v. 目擊；n. 證人）。<span class=\"en\">be witnessed</span> 指「被目擊」，後不接 <span class=\"en\">of</span>；若硬套，語意變成「這個人被目擊」，與 <span class=\"en\">of V-ing</span> 結構不合。"]],
+ concept:"動詞與介系詞的固定搭配（verb + preposition）＋被動語態。看到空格後的 <span class=\"en\">of</span> 就該先篩掉不搭 <span class=\"en\">of</span> 的動詞——先用結構刪去，再用語意確認。"},
+
+{n:14, stem:'Billy ate his dinner too fast. That’s why he nearly <span class="blank">_____</span> on his food.',
+ opts:[["A","blinked"],["B","choked"],["C","frowned"],["D","leaned"]],
+ ans:"B",
+ exp:"<span class=\"en\">That’s why</span> 表結果：吃太快 → 差點「嗆到／噎到」。關鍵搭配是 <span class=\"en\">choke on + 食物</span>。<span class=\"en\">nearly</span>（幾乎、差點）表示未真的發生。",
+ notes:[["A","<span class=\"en\">blink</span>（v. 眨眼），<span class=\"en\">blink one’s eyes</span>。與吃飯無因果關係。"],
+        ["B","<span class=\"en\">choke</span>（v. 使窒息、噎住）。<span class=\"en\">choke on one’s food</span> 為固定搭配，為正解。"],
+        ["C","<span class=\"en\">frown</span>（v. 皺眉），<span class=\"en\">frown at sb.</span>。只是表情，與「吃太快」無必然結果關係。"],
+        ["D","<span class=\"en\">lean</span>（v. 傾身、倚靠），<span class=\"en\">lean on the wall</span>。雖也接 <span class=\"en\">on</span>，但 <span class=\"en\">lean on his food</span>（靠在食物上）不合邏輯——提醒你：介系詞對了也不代表語意對。"]],
+ concept:"因果連接（<span class=\"en\">That’s why</span>）＋動詞片語搭配。本題同時測驗身體動作動詞的精確語意，以及「同介系詞不同語意」的辨析。"},
+
+{n:15, stem:'For many students, poor time management is a big <span class="blank">_____</span> when it comes to studying efficiently.',
+ opts:[["A","embassy"],["B","obstacle"],["C","satellite"],["D","telegraph"]],
+ ans:"B",
+ exp:"<span class=\"en\">poor time management</span>（時間管理不佳）是負面因素，<span class=\"en\">when it comes to studying efficiently</span>（談到有效率地讀書時）說明它妨礙的目標，故空格須為「阻礙」。<span class=\"en\">when it comes to + N/V-ing</span> 為固定片語。",
+ notes:[["A","<span class=\"en\">embassy</span>（n. 大使館）。具體機構，無法作抽象阻礙。"],
+        ["B","<span class=\"en\">obstacle</span>（n. 障礙、阻礙）。<span class=\"en\">an obstacle to + N/V-ing</span>，為正解。同義：<span class=\"en\">barrier</span>、<span class=\"en\">hurdle</span>。"],
+        ["C","<span class=\"en\">satellite</span>（n. 衛星）。語意無關。"],
+        ["D","<span class=\"en\">telegraph</span>（n. 電報）。語意無關。"]],
+ concept:"抽象名詞語意＋片語 <span class=\"en\">when it comes to V-ing</span> 的辨識。先判斷空格的「評價極性」（正面／負面），可一次刪去三個中性具體名詞。"},
+
+{n:16, stem:'Gigi is a very <span class="blank">_____</span> person, always putting time and effort into her homework.',
+ opts:[["A","artistic"],["B","diligent"],["C","flexible"],["D","glorious"]],
+ ans:"B",
+ exp:"逗號後的分詞片語 <span class=\"en\">always putting time and effort into her homework</span>（總是投入時間與精力做功課）是對空格的「同位說明」，描述的正是勤奮，故選 <span class=\"en\">diligent</span>。",
+ notes:[["A","<span class=\"en\">artistic</span>（adj. 有藝術天分的）。與「投入時間做功課」無直接對應。"],
+        ["B","<span class=\"en\">diligent</span>（adj. 勤勉的、用功的）＝<span class=\"en\">hardworking</span>。名詞 <span class=\"en\">diligence</span>，為正解。"],
+        ["C","<span class=\"en\">flexible</span>（adj. 有彈性的、靈活的），形容身體或態度可變通，非努力程度。"],
+        ["D","<span class=\"en\">glorious</span>（adj. 光榮的、壯麗的），多形容事件或景色（<span class=\"en\">a glorious victory</span>）。"]],
+ concept:"分詞片語作補充說明時的「定義功能」。閱讀時要養成習慣：逗號後的 V-ing 片語常是前面形容詞的解釋，等於題目自己附上了中文定義。"},
+
+{n:17, stem:'Our business keeps losing money, so we plan to hire a <span class="blank">_____</span> to give us advice on sales.',
+ opts:[["A","consultant"],["B","hydrogen"],["C","paragraph"],["D","syllable"]],
+ ans:"A",
+ exp:"<span class=\"en\">hire a ____ to give us advice</span>（聘請某人來給我們建議）——空格必須是「人」的名詞，且其職責是提供專業建議，故為 <span class=\"en\">consultant</span>（顧問）。",
+ notes:[["A","<span class=\"en\">consultant</span>（n. 顧問）。字根 <span class=\"en\">consult</span>（v. 諮詢）＋<span class=\"en\">-ant</span>（人），為正解。"],
+        ["B","<span class=\"en\">hydrogen</span>（n. 氫）。非人，不能被 <span class=\"en\">hire</span>。"],
+        ["C","<span class=\"en\">paragraph</span>（n. 段落）。非人。"],
+        ["D","<span class=\"en\">syllable</span>（n. 音節）。非人。"]],
+ concept:"以「語法要求」先鎖定詞類與語意類別（<span class=\"en\">hire</span> 的受詞必須是人），再用字尾 <span class=\"en\">-ant/-ent</span>（表人）輔助判斷。構詞法（word formation）是字彙題的省時工具。"},
+
+{n:18, stem:'The politician was found bribing voters, and his <span class="blank">_____</span> was ruined.',
+ opts:[["A","depression"],["B","persuasion"],["C","reputation"],["D","satisfaction"]],
+ ans:"C",
+ exp:"<span class=\"en\">was found bribing voters</span>（被發現賄選）是醜聞，<span class=\"en\">was ruined</span>（被毀了）需要一個「會被醜聞毀掉」的名詞，故為 <span class=\"en\">reputation</span>（名聲）。",
+ notes:[["A","<span class=\"en\">depression</span>（n. 沮喪、憂鬱；不景氣）。醜聞不會「毀掉沮喪」，邏輯顛倒。"],
+        ["B","<span class=\"en\">persuasion</span>（n. 說服力、勸說）。與醜聞結果不對應。"],
+        ["C","<span class=\"en\">reputation</span>（n. 名聲、聲譽）。<span class=\"en\">ruin / damage one’s reputation</span> 為固定搭配，為正解。"],
+        ["D","<span class=\"en\">satisfaction</span>（n. 滿意）。語意不合，<span class=\"en\">ruin satisfaction</span> 不是自然搭配。"]],
+ concept:"名詞與動詞的搭配（<span class=\"en\">ruin + reputation</span>）＋因果邏輯。四個選項皆為 <span class=\"en\">-ion</span> 結尾抽象名詞，無法靠詞性刪題，必須靠搭配與語意。"}
+]});
+
+/* ============ III. 課本克漏字 (11%) ============ */
+SECTIONS.push({id:"s3", title:"III. 課本克漏字（11%，一題一分）", note:"克漏字考的是「上下文的邏輯關係」與「文法形式」兩條線。作答時先讀完整段再回填，不要看到空格就急著填。",
+ passages:[
+ {title:"Passage [A]　Do Animals Sleep like You and Me?（課本 Unit）",
+  html:"Have you ever <b>__19__</b> that an animal could sleep while flying? It sounds impossible, but migratory birds, which fly long distances <b>__20__</b> to reach warmer areas, do just that. <b>__21__</b>, some birds even sleep, eat, and mate while flying in the air for almost a year. Sleeping in the air keeps them safe, <b>__22__</b> staying on the ground is dangerous for them when asleep. When these birds want to sleep in the evening, they fly higher into the sky, <b>__23__</b> their wings flat, and fall to sleep as they float down through the air. <b>__24__</b> in the morning, they flap their wings and fly back up. Staying alert during the day, these migratory birds keep moving forward before night falls, and it’s time to sleep again. Isn't it fascinating how nature works?"},
+ {title:"Passage [B]　All animals sleep, but in different ways.（課本 Unit）",
+  html:"All animals sleep, but they do it in different ways. Elephants, the largest animals on land, never sleep in long stretches. Instead, they wake up <b>__25__</b> to make sure they are safe. Because of this, elephants sleep for only a couple of minutes each time. However, elephants in zoos can sleep more deeply because there are <b>__26__</b>. Unlike elephants, walruses are easy sleepers. They can sleep just about anywhere. One day, they might sleep while floating on the ocean, and <b>__27__</b>, they might rest on the seafloor. Frogs have amazing sleeping habits too. In winter, they hibernate, and in the hot summer, they enter a half-asleep state <b>__28__</b>. <b>__29__</b>."}
+ ],
+ items:[
+{n:19, stem:'Have you ever <span class="blank">__19__</span> that an animal could sleep while flying?',
+ opts:[["A","wondered"],["B","thought of"],["C","said"],["D","imagined"]],
+ ans:"(A) 或 (D) 皆可（依老師公布）",
+ exp:"空格後接 <span class=\"en\">that</span> 子句，所以動詞必須是「能直接接 that 名詞子句」的字——這一點先刪掉 (B)。(D) <span class=\"en\">imagine that S + V</span>（想像……）語意最直接，與下一句 <span class=\"en\">It sounds impossible</span>（聽起來不可能）呼應。(A) <span class=\"en\">wonder</span> 除了常見的「想知道（後接 whether / wh- 子句）」之外，另有一個較文雅的用法：<span class=\"en\">wonder that S + V</span>＝<span class=\"en\">be surprised that</span>（對……感到驚奇），例如 <span class=\"en\">I wonder that he survived.</span>（他居然活下來，真令人驚奇）。在這個語意下，<span class=\"en\">Have you ever wondered that ...?</span> 同樣成立，且與全段「大自然多麼奇妙」的驚嘆語氣相合，故兩者皆可。",
+ notes:[["A","<span class=\"en\">wonder</span>（v.）兩種用法要分清楚：① <span class=\"en\">wonder + whether/if/wh-</span>＝想知道、納悶（<span class=\"en\">I wonder if it will rain.</span>）；② <span class=\"en\">wonder + that 子句</span>＝感到驚奇（＝<span class=\"en\">be surprised / marvel that</span>）。本題採第二種用法時為可接受答案。名詞 <span class=\"en\">wonder</span>（奇觀、驚奇），形容詞 <span class=\"en\">wonderful</span>；段末的 <span class=\"en\">Isn’t it fascinating how nature works?</span> 正是同一種驚嘆語氣。"],
+        ["B","<span class=\"en\">think of</span>（想到、想起）。<span class=\"en\">of</span> 是介系詞，後面只能接名詞或動名詞（<span class=\"en\">think of sleeping in the air</span>），不能直接接 <span class=\"en\">that</span> 子句，<b>結構錯誤</b>。"],
+        ["C","<span class=\"en\">say</span>（v. 說）。雖可接 <span class=\"en\">that</span> 子句，但語意不通：「你有說過動物能邊飛邊睡嗎？」與下一句的驚奇語氣不合，<b>語意錯誤</b>。"],
+        ["D","<span class=\"en\">imagine</span>（v. 想像）。<span class=\"en\">Have you ever imagined that ...?</span> 結構與語意皆成立，為可接受答案。注意 <span class=\"en\">imagine</span> 後也可接動名詞（<span class=\"en\">imagine sleeping in the air</span>），但不接不定詞。"]],
+ concept:"動詞後接子句的句型限制（verb patterns）：that 子句 vs. whether/wh- 子句 vs. 介系詞＋V-ing。本題還延伸到<b>一字多義</b>——<span class=\"en\">wonder</span> 在不同句型下語意不同（想知道／感到驚奇），這正是高階閱讀最需要的敏感度：同一個字，句型變了，意思就變了。"},
+
+{n:20, stem:'... migratory birds, which fly long distances <span class="blank">__20__</span> to reach warmer areas, do just that.',
+ opts:[["A","at a time"],["B","in flight"],["C","by tradition"],["D","in response"]],
+ ans:"A",
+ exp:"<span class=\"en\">fly long distances ____ to reach warmer areas</span>：空格修飾「一次飛行的距離量」。<span class=\"en\">at a time</span>（一次、每次）說明候鳥「一次就飛很長的距離」，語意完整且與 <span class=\"en\">long distances</span> 搭配自然。",
+ notes:[["A","<span class=\"en\">at a time</span>（一次；每回）。<span class=\"en\">fly long distances at a time</span>＝一次飛很遠，為正解。比較：<span class=\"en\">at times</span>＝有時候。"],
+        ["B","<span class=\"en\">in flight</span>（在飛行中）。此句主要動詞已是 <span class=\"en\">fly</span>，再加 <span class=\"en\">in flight</span> 語意重複（redundant）。"],
+        ["C","<span class=\"en\">by tradition</span>（按照傳統）。候鳥遷徙是本能（instinct）而非文化傳統，語意不當。"],
+        ["D","<span class=\"en\">in response</span>（作為回應）。須有回應的對象，常用 <span class=\"en\">in response to + N</span>；此處無被回應者，結構不完整。"]],
+ concept:"介系詞片語的語意辨析，以及「冗贅（redundancy）」的概念。克漏字常以「文法可通但語意重複」當誘答，提醒你檢查整句是否有重複資訊。"},
+
+{n:21, stem: '<span class="blank">__21__</span>, some birds even sleep, eat, and mate while flying in the air for almost a year.',
+ opts:[["A","Even so"],["B","For example"],["C","In fact"],["D","As a result"]],
+ ans:"C",
+ exp:"前句說 <span class=\"en\">It sounds impossible, but ... do just that</span>（聽起來不可能，但真的如此）；本句用 <span class=\"en\">even</span>（甚至）把程度再推高一層（不只睡，還吃、交配，長達近一年）。這種「不只如此，事實上更誇張」的加強語氣，用 <span class=\"en\">In fact</span> 最準。",
+ notes:[["A","<span class=\"en\">Even so</span>（即使如此、話雖如此）表讓步轉折，後面應接相反或退讓的訊息，但此處是「更進一步」，方向相反。"],
+        ["B","<span class=\"en\">For example</span>（舉例來說）。本句不是舉某一種鳥為例來說明前句，而是提出「程度更強」的事實，且句中 <span class=\"en\">even</span> 已標示加強，非舉例。"],
+        ["C","<span class=\"en\">In fact</span>（事實上）。用於補充更強、更令人意外的事實，與 <span class=\"en\">even</span> 搭配最自然，為正解。"],
+        ["D","<span class=\"en\">As a result</span>（因此）表結果。前句並非本句的原因，無因果關係。"]],
+ concept:"轉折詞／連接副詞（transitions）的方向判斷：加強（in fact）、舉例（for example）、讓步（even so）、因果（as a result）。解法是先畫出前後句的「邏輯箭頭」再選字，並留意句中的 <span class=\"en\">even</span> 等語氣標記。"},
+
+{n:22, stem:'Sleeping in the air keeps them safe, <span class="blank">__22__</span> staying on the ground is dangerous for them when asleep.',
+ opts:[["A","although"],["B","since"],["C","or"],["D","so"]],
+ ans:"B",
+ exp:"前半「在空中睡覺讓牠們安全」，後半「在地面睡覺對牠們危險」——後者是前者的「原因」。<span class=\"en\">since</span> 作連接詞＝<span class=\"en\">because</span>（既然、因為），故選 (B)。",
+ notes:[["A","<span class=\"en\">although</span>（雖然）表讓步。兩句語意一致（都支持「空中較安全」），沒有相反關係。"],
+        ["B","<span class=\"en\">since</span>（因為）。此處引導原因副詞子句，為正解。注意 <span class=\"en\">since</span> 另有「自從」之意（接時間），屬一字多義。"],
+        ["C","<span class=\"en\">or</span>（或者；否則）。連接對等選項，兩個完整句意無法以「選擇」並列。"],
+        ["D","<span class=\"en\">so</span>（所以）表結果。若用 <span class=\"en\">so</span>，變成「空中安全，所以地面危險」，因果顛倒。"]],
+ concept:"因果與讓步連接詞的方向性，以及 <span class=\"en\">since</span> 的一字多義（because／from that time）。判準：先問「哪一句是原因」，再決定連接詞該放哪一邊。"},
+
+{n:23, stem:'... they fly higher into the sky, <span class="blank">__23__</span> their wings flat, and fall to sleep as they float down through the air.',
+ opts:[["A","lie"],["B","let"],["C","lend"],["D","lay"]],
+ ans:"D",
+ exp:"空格後有受詞 <span class=\"en\">their wings</span> 與受詞補語 <span class=\"en\">flat</span>（<span class=\"en\">V + O + adj.</span>），需要「及物動詞」。<span class=\"en\">lay</span>（放置、使平放）為及物動詞：<span class=\"en\">lay their wings flat</span>＝把翅膀放平。三個對等動詞 <span class=\"en\">fly ... lay ... fall</span> 皆為原形現在式，時態一致。",
+ notes:[["A","<span class=\"en\">lie</span>（vi. 躺、位於；lie-lay-lain）為不及物動詞，不可接受詞，故 <span class=\"en\">lie their wings</span> 錯誤。注意它的過去式 <span class=\"en\">lay</span> 正是本題的陷阱來源。"],
+        ["B","<span class=\"en\">let</span>（v. 讓）為使役動詞，接原形動詞（<span class=\"en\">let + O + V</span>），不接形容詞；<span class=\"en\">let their wings flat</span> 結構錯誤。"],
+        ["C","<span class=\"en\">lend</span>（v. 借出）。<span class=\"en\">lend sb. sth.</span>，語意與「翅膀放平」無關。"],
+        ["D","<span class=\"en\">lay</span>（vt. 放置、下蛋；lay-laid-laid）。<span class=\"en\">lay + O + adj.</span> 為正解。"]],
+ concept:"<span class=\"en\">lie / lay</span> 的及物與不及物辨析（高一常考易混動詞）＋<span class=\"en\">V + O + 受詞補語</span> 句型。空格後有沒有受詞，就是最快的判準。"},
+
+{n:24, stem:'<span class="blank">__24__</span> in the morning, they flap their wings and fly back up.',
+ opts:[["A","Once awake"],["B","Almost ready"],["C","Still asleep"],["D","Keeping awake"]],
+ ans:"A",
+ exp:"前文說牠們晚上邊下降邊睡，本句說「早上牠們拍翅往上飛」——能拍翅上飛必須是「醒來之後」。<span class=\"en\">Once awake</span> 是 <span class=\"en\">Once they are awake</span> 的省略（副詞子句中主詞與 be 動詞省略），表「一旦醒來」。",
+ notes:[["A","<span class=\"en\">Once awake</span>＝<span class=\"en\">Once (they are) awake</span>，<span class=\"en\">once</span>（conj. 一旦）＋<span class=\"en\">awake</span>（adj. 醒著的），為正解。"],
+        ["B","<span class=\"en\">Almost ready</span>（幾乎準備好了）。文中沒有「準備」的概念，語意突兀。"],
+        ["C","<span class=\"en\">Still asleep</span>（仍在睡）。睡著狀態與 <span class=\"en\">flap their wings and fly back up</span>（拍翅飛回上空）矛盾。"],
+        ["D","<span class=\"en\">Keeping awake</span>（保持清醒）。<span class=\"en\">keep awake</span> 指持續不睡，但牠們整晚是睡著的；且後文 <span class=\"en\">Staying alert during the day</span> 才描述白天的清醒，位置重複。"]],
+ concept:"副詞子句的簡化（<span class=\"en\">Once (S + be) + adj.</span>）＋語意時序推論。此題同時測驗 <span class=\"en\">asleep / awake</span> 這組形容詞的狀態差異。"},
+
+{n:25, stem:'Instead, they wake up <span class="blank">__25__</span> to make sure they are safe.',
+ opts:[["A","every few minutes"],["B","any minute now"],["C","once every minute"],["D","a few minutes"]],
+ ans:"A",
+ exp:"下一句 <span class=\"en\">elephants sleep for only a couple of minutes each time</span>（每次只睡幾分鐘）說明牠們「每隔幾分鐘就醒一次」。<span class=\"en\">every few minutes</span>＝每隔幾分鐘，表「反覆發生的頻率」，與 <span class=\"en\">never sleep in long stretches</span> 完全呼應。",
+ notes:[["A","<span class=\"en\">every few minutes</span>（每隔幾分鐘）。<span class=\"en\">every + 數量詞 + 複數名詞</span> 表頻率，為正解。"],
+        ["B","<span class=\"en\">any minute now</span>（隨時、馬上就要）。指「即將發生一次」，不是重複頻率，與 <span class=\"en\">each time</span> 的反覆語意不合。"],
+        ["C","<span class=\"en\">once every minute</span>（每分鐘一次）。頻率過於精確且與下句「每次睡幾分鐘（<span class=\"en\">a couple of minutes</span>）」互相矛盾——若每分鐘醒一次，就不可能每次睡上好幾分鐘。"],
+        ["D","<span class=\"en\">a few minutes</span>（幾分鐘）為名詞片語，單獨使用無法表「頻率」，缺少 <span class=\"en\">every</span> 或 <span class=\"en\">for</span>，結構不完整。"]],
+ concept:"頻率副詞片語的結構（<span class=\"en\">every + 數 + 複數名詞</span>）＋前後句數據一致性檢查。細節邏輯（details & logic）題型：答案必須與鄰句的數字不衝突。"},
+
+{n:26, stem:'However, elephants in zoos can sleep more deeply because there are <span class="blank">__26__</span>.',
+ opts:[["A","threats from tigers"],["B","no dangers to the predators"],["C","no threats to their survival"],["D","dangers in the space"]],
+ ans:"C",
+ exp:"<span class=\"en\">However</span> 轉折：野生象因為要確認安全（<span class=\"en\">make sure they are safe</span>）而淺睡；動物園的象能「睡得更沉」，原因必須是「沒有威脅」。(C) <span class=\"en\">no threats to their survival</span>（對牠們生存沒有威脅）語意與邏輯皆正確。",
+ notes:[["A","<span class=\"en\">threats from tigers</span>（來自老虎的威脅）。有威脅就無法睡更沉，與 <span class=\"en\">more deeply</span> 因果相反。"],
+        ["B","<span class=\"en\">no dangers to the predators</span>（對掠食者沒有危險）。指涉對象錯誤：該說「對大象沒有危險」，這裡的受惠者卻變成掠食者（predators）。這是 anaphor／指涉錯置的典型誘答。"],
+        ["C","<span class=\"en\">no threats to their survival</span>。<span class=\"en\">threat to + N</span>（對……的威脅）搭配正確，<span class=\"en\">their</span> 指大象，為正解。"],
+        ["D","<span class=\"en\">dangers in the space</span>（空間中的危險）。既有危險（邏輯相反），<span class=\"en\">the space</span> 的定冠詞也無先行指涉。"]],
+ concept:"因果一致性＋代名詞／所有格的指涉對象（anaphor）判讀，以及 <span class=\"en\">threat to</span> 的介系詞搭配。請特別練習 (B) 這種「句子通順但指涉錯人」的陷阱。"},
+
+{n:27, stem:'One day, they might sleep while floating on the ocean, and <span class="blank">__27__</span>, they might rest on the seafloor.',
+ opts:[["A","the other days"],["B","the other day"],["C","every other day"],["D","another day"]],
+ ans:"D",
+ exp:"句首已用 <span class=\"en\">One day</span>（有一天），後半需要與之對稱的「另一天」。<span class=\"en\">One day ... another day ...</span> 是標準的對照配對，表「有時這樣、有時那樣」。",
+ notes:[["A","<span class=\"en\">the other days</span>（其餘的那些日子）。<span class=\"en\">the other</span> 指「特定剩下的全部」，需有明確範圍；此處只是舉例對照，語意過於限定。"],
+        ["B","<span class=\"en\">the other day</span>（前幾天、某天＝過去）。是過去時間副詞，與本句推測語氣 <span class=\"en\">might</span> 及泛指習性的語境不合。"],
+        ["C","<span class=\"en\">every other day</span>（每隔一天）。表固定頻率，但海象的睡法是「隨處隨意」（<span class=\"en\">just about anywhere</span>），不是隔日規律。"],
+        ["D","<span class=\"en\">another day</span>（另外一天）。<span class=\"en\">another</span>＝<span class=\"en\">an + other</span>，泛指「再一個」，與 <span class=\"en\">One day</span> 對稱，為正解。"]],
+ concept:"<span class=\"en\">another / the other / the others / every other</span> 的區辨（高一代名詞重點）＋平行對照結構 <span class=\"en\">One day ..., another day ...</span>。"},
+
+{n:28, stem:'In winter, they hibernate, and in the hot summer, they enter a half-asleep state <span class="blank">__28__</span>.',
+ opts:[["A","in case they want to stay alive."],["B","in case their bodies lose too much energy."],["C","in order to stay alive quickly"],["D","in order to keep warm."]],
+ ans:"B",
+ exp:"<span class=\"en\">in case</span>（以免、萬一）用於「預防不希望發生的事」。青蛙在炎夏進入半睡狀態，是為了「以免身體消耗太多能量」，故選 (B)。此句與前面 <span class=\"en\">In winter, they hibernate</span>（冬眠保存能量）形成平行的生存策略。",
+ notes:[["A","<span class=\"en\">in case they want to stay alive</span>（以免牠們想活下去）。<span class=\"en\">in case</span> 後應接「要避免的壞事」，但「想活下去」是正面願望，邏輯矛盾。"],
+        ["B","<span class=\"en\">in case + S + V</span>（以免……）＋<span class=\"en\">lose too much energy</span>（流失過多能量）。預防的是負面結果，為正解。"],
+        ["C","<span class=\"en\">in order to stay alive quickly</span>。<span class=\"en\">in order to V</span> 表目的，但 <span class=\"en\">stay alive quickly</span>（快速地活著）語意不通，副詞搭配錯誤。"],
+        ["D","<span class=\"en\">in order to keep warm</span>（為了保暖）。季節矛盾：此處是 <span class=\"en\">the hot summer</span>（炎熱的夏天），保暖是冬天的需求。"]],
+ concept:"<span class=\"en\">in case</span>（預防負面結果）與 <span class=\"en\">in order to</span>（正面目的）的語意方向差異，並檢查答案與季節等背景事實是否一致。"},
+
+{n:29, stem:'請選擇 <span class="en">that</span> 子句文法正確的句子。',
+ opts:[["A","The more we learn about animal sleeping habits, the more we would pay attention to that animals are amazing."],["B","After learning about how animals sleep, you can tell others that nature is full of wonder."],["C","After learning all about animal sleeping habits, you can ask yourself that people sleep differently too."],["D","Because it is impossible to avoid that enemies are everywhere, how to stay alert while asleep is important."]],
+ ans:"B",
+ exp:"本題考 <span class=\"en\">that</span> 名詞子句可以出現在哪些位置。原則：<span class=\"en\">that</span> 子句<b>不可直接作介系詞的受詞</b>，也<b>不可接在不允許 that 子句的動詞之後</b>。<span class=\"en\">tell sb. that + S + V</span> 是標準句型，故 (B) 正確。",
+ notes:[["A","<span class=\"en\">pay attention <u>to</u> that ...</span> 錯誤：<span class=\"en\">to</span> 是介系詞，後面不能直接接 <span class=\"en\">that</span> 子句。須改為 <span class=\"en\">pay attention to <u>the fact</u> that ...</span> 或 <span class=\"en\">pay attention to <u>how</u> amazing animals are</span>。另外 <span class=\"en\">The more ..., the more ...</span> 句型中用 <span class=\"en\">would</span> 亦不自然。"],
+        ["B","<span class=\"en\">tell others that nature is full of wonder</span>。<span class=\"en\">tell</span> 為授與動詞，可接「人＋that 子句」，結構與語意皆正確，為正解。"],
+        ["C","<span class=\"en\">ask yourself that ...</span> 錯誤：<span class=\"en\">ask</span> 表「詢問」時後接 <span class=\"en\">wh-</span> 或 <span class=\"en\">whether/if</span> 子句（<span class=\"en\">ask yourself <u>whether</u> people sleep differently</span>），不接陳述性的 <span class=\"en\">that</span> 子句。"],
+        ["D","<span class=\"en\">avoid that ...</span> 錯誤：<span class=\"en\">avoid</span> 後接名詞或 V-ing（<span class=\"en\">avoid <u>facing</u> the fact that ...</span>），不接 <span class=\"en\">that</span> 子句。"]],
+ concept:"<span class=\"en\">that</span> 名詞子句的句法限制：可作 <span class=\"en\">tell / know / believe / say</span> 等動詞的受詞，但不可作介系詞受詞，也不可作 <span class=\"en\">ask / avoid</span> 等動詞的受詞。判準三步：① 空格前是介系詞嗎？② 該動詞允許 that 子句嗎？③ 語意是陳述還是疑問？"}
+]});
+
+/* ============ IV. 文意選填 (39%) ============ */
+SECTIONS.push({id:"s4", title:"IV. 課本、雜誌文意選填（39%，一題一分）", note:"作答規則：選項與空格一對一對應，任何選項不會被兩格共用；每題只有一個最佳答案。本大題佔全卷 39%，是分數分水嶺。詳解聚焦三件事：① 空格需要什麼「詞性／結構」；② 哪個語意線索決定答案；③ 哪些選項是刻意設計的近義誘答（例如 below／following、as／like 這類成對陷阱）。",
+ passages:[
+ {title:"Passage [A] 課本　History’s Firsts",
+  html:"While we may think there is nothing new under the sun, the <b>__30__</b> are some of history's firsts that will give us thoughts on everyday things we forget to notice.<br><br><b>First written name</b><br>Kushim is believed to be the first name <b>__31__</b> written in history. Writing in 3200 BC was very hard. People <b>__32__</b> wrote by pressing cut plant stems into soft, damp clay to create marks. Most thought it difficult to write, so they only saved it for important events <b>__33__</b> doing business. The name “Kushim” appears on several clay tablets used to record business. Because they are not <b>__34__</b> with enough information, the researchers can’t decide if Kushim is a man or a group of people. In either case, it is interesting to see how much our forefathers valued written records.<br><br><b>First selfie</b><br>In the 1400s, drawing was the main way to capture one’s looks, but not many painters <b>__35__</b> could do this at that time. To make matters worse, paintings of oneself were mostly <b>__36__</b> to regular people because only the rich could afford them. Then came the first camera in the 1800s. Though a selfie is defined as a photo taken of oneself with a smartphone, the idea of a photographic self-portrait was <b>__37__</b> to the public much earlier. In 1839, Robert Cornelius, a self-taught photographer, successfully took a photo of himself. After setting up his camera, he took the image by removing the lens cap, running into the frame, and sitting still for 15 minutes before covering the lens again. It must have been hard for him to picture people nowadays, even when <b>__38__</b>, taking a quick photo whenever they want.<br><br>Our lack of care and interest explains <b>__39__</b> another failure to acknowledge everyday achievements. Looking at these historical firsts helps us appreciate the excitement behind things we now take for granted.",
+  bank:["(A) below","(B) as","(C) like","(D) presented","(E) unprepared","(AB) ever","(AC) introduced","(AD) denied","(AE) then","(BC) yet","(BD) around","(BE) following"]}
+ ],
+ items:[
+{n:30, stem:'... the <span class="blank">__30__</span> are some of history\'s firsts that will give us thoughts on everyday things ...',
+ ans:"(BE) following",
+ exp:"空格前有定冠詞 <span class=\"en\">the</span>、後接複數動詞 <span class=\"en\">are</span>，所以空格要能構成「名詞用法」並指「下面所列的內容」。<span class=\"en\">the following</span>（以下所述者）是標準用法，可接單複數動詞。",
+ notes:[["(BE)","<span class=\"en\">following</span>（n./adj. 接下來的、以下的）。<span class=\"en\">the following are ...</span>＝以下是……，為正解。"],
+        ["(A)","<span class=\"en\">below</span>（adv./prep. 在下方）是副詞或介系詞，不能加 <span class=\"en\">the</span> 當主詞用（<span class=\"en\">the below are</span> 非標準英文）。正確用法為 <span class=\"en\">See the examples below.</span>——這組 below／following 就是本篇最明顯的成對誘答。"],
+        ["(AE)","<span class=\"en\">then</span>（adv. 那時）為時間副詞，無法作主詞。"]],
+ concept:"<span class=\"en\">the following</span> 作名詞的慣用法，以及「主詞位置必須是名詞性成分」的句法判準。本題測驗你能否用『結構』而非語意來排除 below。"},
+
+{n:31, stem:'Kushim is believed to be the first name <span class="blank">__31__</span> written in history.',
+ ans:"(AB) ever",
+ exp:"<span class=\"en\">the first + N + ever + p.p./V-ed</span> 是常見的加強結構，<span class=\"en\">ever</span>（有史以來、從來）用來強化最高級或 <span class=\"en\">first</span> 的語氣：「有史以來第一個被寫下的名字」。",
+ notes:[["(AB)","<span class=\"en\">ever</span>（adv. 曾經、有史以來）。與 <span class=\"en\">the first</span>／最高級連用以加強語氣，為正解。例：<span class=\"en\">the best movie I have ever seen</span>。"],
+        ["(AE)","<span class=\"en\">then</span>（那時）。<span class=\"en\">the first name then written</span> 語意變成「當時被寫下的第一個名字」，會與下文「3200 BC 書寫很難」重複，且弱化 <span class=\"en\">first in history</span> 的全史範圍。"],
+        ["(B)","<span class=\"en\">as</span> 置於此處無法連接，結構錯誤。"]],
+ concept:"<span class=\"en\">ever</span> 的強調用法＋過去分詞作後位修飾（<span class=\"en\">the first name (that was) ever written</span> 的省略）。"},
+
+{n:32, stem:'Writing in 3200 BC was very hard. People <span class="blank">__32__</span> wrote by pressing cut plant stems into soft, damp clay ...',
+ ans:"(AE) then",
+ exp:"本段在談 3200 BC 的書寫方式，空格位於主詞 <span class=\"en\">People</span> 與動詞 <span class=\"en\">wrote</span> 之間，需要一個「時間副詞」呼應上一句的 <span class=\"en\">in 3200 BC</span>：<span class=\"en\">People then wrote ...</span>＝當時的人是用……書寫的。",
+ notes:[["(AE)","<span class=\"en\">then</span>（adv. 當時、那時）。置於主詞後修飾動詞，為正解。注意 <span class=\"en\">then</span> 一字多義：當時／然後／那麼。"],
+        ["(AB)","<span class=\"en\">ever</span> 用於肯定句的主詞後不合語法（<span class=\"en\">People ever wrote</span> 錯誤）；<span class=\"en\">ever</span> 多用於疑問、否定、比較或與 first／最高級連用。"],
+        ["(BD)","<span class=\"en\">around</span>（adv. 到處、大約）。<span class=\"en\">People around wrote</span> 語意為「周圍的人」，與時間脈絡不合。"]],
+ concept:"時間副詞的位置（主詞與動詞之間）＋一字多義（<span class=\"en\">then</span>）。此題與第 31 題共用 then／ever 兩張牌，必須靠句法位置決定誰去哪一格——這正是一對一對應題型的核心技巧。"},
+
+{n:33, stem:'... so they only saved it for important events <span class="blank">__33__</span> doing business.',
+ ans:"(C) like",
+ exp:"空格後是 <span class=\"en\">doing business</span>（動名詞），語意是「舉例」：重要的事件，<b>像是</b>做生意。<span class=\"en\">like</span>（prep. 像、例如）可直接接名詞或 V-ing。",
+ notes:[["(C)","<span class=\"en\">like</span>（prep. 像、例如）＝<span class=\"en\">such as</span>。<span class=\"en\">events like doing business</span>，為正解。"],
+        ["(B)","<span class=\"en\">as</span>（prep./conj.）表「例如」時必須寫成 <span class=\"en\">such as</span>；單獨的 <span class=\"en\">as</span> 接名詞時意思是「作為、以……身分」（<span class=\"en\">work as a teacher</span>），放在此處語意變成「以做生意的身分」，不通。like／as 是本篇第二組成對誘答。"],
+        ["(BE)","<span class=\"en\">following</span>（接在……之後）。<span class=\"en\">events following doing business</span>＝做生意之後的事件，語意與「舉例」不同，且與下文「黏土板是用來記錄生意」的舉例關係不符。"]],
+ concept:"舉例用法 <span class=\"en\">like / such as</span> 與身分用法 <span class=\"en\">as</span> 的辨析，以及介系詞後接動名詞（V-ing）的結構。"},
+
+{n:34, stem:'Because they are not <span class="blank">__34__</span> with enough information, the researchers can’t decide if Kushim is a man or a group of people.',
+ ans:"(D) presented",
+ exp:"空格在 <span class=\"en\">are not ____ with ...</span> 之中，需要過去分詞構成被動語態，且能搭配介系詞 <span class=\"en\">with</span>。<span class=\"en\">present sb. with sth.</span>（提供／呈現某物給某人）→ 被動 <span class=\"en\">be presented with sth.</span>：研究者「沒有被提供足夠的資訊」。",
+ notes:[["(D)","<span class=\"en\">presented</span>（<span class=\"en\">present</span> v. 呈現、提供；adj./n. 現在的、禮物）。<span class=\"en\">be presented with + N</span> 為正解，且與下文 <span class=\"en\">can’t decide</span>（無法判定）構成因果。"],
+        ["(AD)","<span class=\"en\">denied</span>（<span class=\"en\">deny</span> v. 否認、拒絕給予）。<span class=\"en\">be denied sth.</span> 不加 <span class=\"en\">with</span>（<span class=\"en\">be denied access</span>），結構不合；且句中已有 <span class=\"en\">not</span>，再用 denied 會形成雙重否定，語意變成「有足夠資訊」。"],
+        ["(AC)","<span class=\"en\">introduced</span>（v. 介紹、引進）。<span class=\"en\">be introduced to sb.</span> 搭配 <span class=\"en\">to</span>，不搭 <span class=\"en\">with</span>。"]],
+ concept:"被動語態＋動詞固定介系詞搭配（<span class=\"en\">present sb. with</span> / <span class=\"en\">deny sb. sth.</span> / <span class=\"en\">introduce sth. to sb.</span>）。並留意 <span class=\"en\">not</span> 與否定語意動詞並用時的雙重否定檢查。"},
+
+{n:35, stem:'... but not many painters <span class="blank">__35__</span> could do this at that time.',
+ ans:"(BD) around",
+ exp:"<span class=\"en\">not many painters ____ could do this</span>：空格修飾前面的名詞 <span class=\"en\">painters</span>。<span class=\"en\">around</span> 作後位修飾時意為「在附近的、現有的」：<span class=\"en\">not many painters around</span>＝當時「現有／周遭的」畫家不多。",
+ notes:[["(BD)","<span class=\"en\">around</span>（adv. 在附近、存在著）。<span class=\"en\">the best painters around</span>＝當今／周遭最好的畫家，為正解。"],
+        ["(AE)","<span class=\"en\">then</span>。語意可通，但句末已有 <span class=\"en\">at that time</span>（當時），再加 <span class=\"en\">then</span> 時間資訊重複；且 then 這張牌在第 32 題才是唯一解（一對一對應）。"],
+        ["(AB)","<span class=\"en\">ever</span>。<span class=\"en\">not many painters ever could</span> 語序不自然，應為 <span class=\"en\">could ever</span>。"]],
+ concept:"副詞後位修飾名詞（<span class=\"en\">the people around</span>）＋一對一對應題型的「交叉檢查」策略：某個選項若在別題是唯一解，本題就不該佔用它。"},
+
+{n:36, stem:'To make matters worse, paintings of oneself were mostly <span class="blank">__36__</span> to regular people because only the rich could afford them.',
+ ans:"(AD) denied",
+ exp:"<span class=\"en\">because only the rich could afford them</span>（只有富人買得起）說明一般人「得不到」自畫像。<span class=\"en\">deny sb. sth.</span>／<span class=\"en\">deny sth. to sb.</span>（不給某人某物）→ 被動 <span class=\"en\">sth. be denied to sb.</span>：自畫像大多「無緣於」一般人。",
+ notes:[["(AD)","<span class=\"en\">denied</span>（v. 拒絕給予）。<span class=\"en\">be denied to sb.</span> 為正解，與 <span class=\"en\">To make matters worse</span>（更糟的是）的負面語氣一致。"],
+        ["(D)","<span class=\"en\">presented</span>（呈現、提供）。<span class=\"en\">be presented to regular people</span> 語意變成「提供給一般人」，與 <span class=\"en\">only the rich could afford</span> 的因果相反。"],
+        ["(AC)","<span class=\"en\">introduced</span>（引進、推廣）。語意偏正面，且第 37 題的 <span class=\"en\">introduced to the public</span> 才是它的正確落點。"]],
+ concept:"因果一致性（<span class=\"en\">because</span> 子句決定主句極性）＋ <span class=\"en\">deny / present / introduce</span> 三個動詞的被動搭配。<span class=\"en\">To make matters worse</span> 這類轉折語是判斷正負向的免費線索。"},
+
+{n:37, stem:'... the idea of a photographic self-portrait was <span class="blank">__37__</span> to the public much earlier.',
+ ans:"(AC) introduced",
+ exp:"<span class=\"en\">Though a selfie is defined as a photo taken ... with a smartphone</span> 為讓步：雖然自拍的定義與智慧型手機有關，但「照片式自畫像」這個概念「被引介給大眾」的時間早得多（<span class=\"en\">much earlier</span>）。<span class=\"en\">introduce sth. to sb.</span>（把某物引介給某人）→ 被動 <span class=\"en\">be introduced to the public</span>。",
+ notes:[["(AC)","<span class=\"en\">introduced</span>（v. 介紹、引進、推出）。<span class=\"en\">be introduced to the public</span>＝向大眾推出，為正解；下文 1839 年 Robert Cornelius 的例子正是佐證。"],
+        ["(D)","<span class=\"en\">presented</span>。<span class=\"en\">be presented to the public</span> 文法可通，但 <span class=\"en\">present</span> 強調「展示某一件作品」，而本句講的是「一個概念的首次問世」，<span class=\"en\">introduce</span> 更精確；且 presented 在第 34 題有唯一的結構落點（<span class=\"en\">with</span>）。"],
+        ["(AD)","<span class=\"en\">denied</span>（拒絕給予）。與 <span class=\"en\">much earlier</span> 所要表達的「其實很早就有了」語意相反。"]],
+ concept:"<span class=\"en\">Though</span> 讓步句的語意走向＋被動語態介系詞搭配。此題與 34、36 共用 presented／denied／introduced 三張牌，必須用「介系詞（with / to）」與「語意精確度」雙重判準分配。"},
+
+{n:38, stem:'It must have been hard for him to picture people nowadays, even when <span class="blank">__38__</span>, taking a quick photo whenever they want.',
+ ans:"(E) unprepared",
+ exp:"與前文 Cornelius 的繁複程序（拆鏡頭蓋、跑進畫面、靜坐 15 分鐘）形成強烈對比：現代人「即使在毫無準備的情況下」也能隨時拍照。<span class=\"en\">even when (they are) unprepared</span> 為副詞子句的省略（主詞與 be 動詞省略）。",
+ notes:[["(E)","<span class=\"en\">unprepared</span>（adj. 未準備好的；<span class=\"en\">un-</span>＋<span class=\"en\">prepared</span>）。為正解，與 <span class=\"en\">a quick photo whenever they want</span> 的隨性相呼應。"],
+        ["(BD)","<span class=\"en\">around</span>（在附近）。<span class=\"en\">even when around</span> 語意空泛，無法與前文的「準備工夫」形成對比。"],
+        ["(AB)","<span class=\"en\">ever</span>。<span class=\"en\">even when ever</span> 不成句，結構錯誤。"]],
+ concept:"副詞子句的省略（<span class=\"en\">when (S + be) + adj.</span>）＋對比性閱讀：答案來自段落內「古／今」兩種拍照經驗的落差，而非單句。"},
+
+{n:39, stem:'Our lack of care and interest explains <span class="blank">__39__</span> another failure to acknowledge everyday achievements.',
+ ans:"(BC) yet",
+ exp:"<span class=\"en\">yet another + 單數名詞</span> 是固定強調用法，意為「又一個、再一個」，帶有「這種情況已經不只一次」的語氣：我們的漠不關心，解釋了「又一次」未能肯定日常成就的現象。",
+ notes:[["(BC)","<span class=\"en\">yet</span>（adv. 更加、再；conj. 然而）。<span class=\"en\">yet another failure</span> 為正解。注意這裡的 <span class=\"en\">yet</span> 不是「尚未」也不是「然而」——屬一字多義的高階用法。"],
+        ["(AE)","<span class=\"en\">then</span>。<span class=\"en\">explains then another</span> 語序與語意皆不自然，且 then 已用於第 32 題。"],
+        ["(A)","<span class=\"en\">below</span>（在下方）。放在動詞與受詞之間不合語法。"]],
+ concept:"<span class=\"en\">yet another</span> 的強調用法與 <span class=\"en\">yet</span> 的一字多義（尚未／然而／更加）。結尾段的這類語氣副詞，往往是全文態度（作者立場）的指標。"}
+]});
+
+SECTIONS.push({id:"s4b", title:"IV-[B] 雜誌　Agatha Christie（40–47）", note:"本篇為人物介紹＋事件敘述，重點在「介系詞片語的固定搭配」與「轉折副詞」。",
+ passages:[{title:"Passage [B] 雜誌　The Queen of Mystery",
+  html:"Anyone who enjoys reading detective stories loves the feeling of putting the last piece of the <b>__40__</b> puzzle back and solving the crime right before the story ends. But for those who like a story that keeps them guessing <b>__41__</b> the very end, Agatha Christie (1890-1976) is the writer they will turn to. <b>__42__</b> unexpected endings, Christie is good at building mystery along the way. Most of the characters in her stories have dark secrets, tell lies, and turn <b>__43__</b> one another.<br><br>Her life, like her stories, is full of mystery. In 1926, Christie suddenly went away without a trace. Just when her husband said she was <b>__44__</b> forever, she was found safe at a hotel. Most people believed she tricked her husband by running away <b>__45__</b> to punish him for cheating. Doctors, <b>__46__</b>, thought she was just really sick from too much stress. <b>__47__</b> planning her own 11-day disappearance, Christie stayed away from people, divorced her husband, and kept writing.",
+  bank:["(A) on the other hand","(B) suspected of","(C) missing","(D) on purpose","(E) known for","(AB) gone","(AC) until","(AD) against"]}],
+ items:[
+{n:40, stem:'... putting the last piece of the <span class="blank">__40__</span> puzzle back ...',
+ ans:"(C) missing",
+ exp:"空格位於 <span class=\"en\">the ____ puzzle</span>（冠詞與名詞之間），需要形容詞。<span class=\"en\">the missing puzzle (piece)</span>＝缺失的那一塊拼圖，正好對應 <span class=\"en\">putting the last piece ... back</span>（把最後一塊放回去）。",
+ notes:[["(C)","<span class=\"en\">missing</span>（adj. 不見的、缺少的）。<span class=\"en\">a missing piece</span> 為正解；此處把「破案」比喻成「補上最後一塊拼圖」（metaphor）。"],
+        ["(AB)","<span class=\"en\">gone</span>（adj. 離去的、消失的）。多作主詞補語（<span class=\"en\">He is gone.</span>），一般不置於名詞前作修飾語。"],
+        ["(B)","<span class=\"en\">suspected of</span>（被懷疑……）。含介系詞，無法插在 <span class=\"en\">the ... puzzle</span> 之間。"]],
+ concept:"形容詞的前位修飾位置＋比喻（metaphor）理解：全句以拼圖喻推理解謎，是本篇的主控意象。"},
+
+{n:41, stem:'... a story that keeps them guessing <span class="blank">__41__</span> the very end ...',
+ ans:"(AC) until",
+ exp:"<span class=\"en\">keep + O + V-ing</span>（使某人持續做某事）＋時間介系詞。<span class=\"en\">until the very end</span>＝直到最後一刻，說明懸疑持續的終點。<span class=\"en\">the very + N</span> 的 <span class=\"en\">very</span> 是形容詞「正是那個」，加強語氣。",
+ notes:[["(AC)","<span class=\"en\">until</span>（prep./conj. 直到）。為正解。比較 <span class=\"en\">by the end</span>（在結束前完成）語意不同。"],
+        ["(AD)","<span class=\"en\">against</span>（prep. 對抗、反對）。<span class=\"en\">guessing against the end</span> 語意不通。"],
+        ["(A)","<span class=\"en\">on the other hand</span>（另一方面）為連接副詞，不能接名詞作時間狀語。"]],
+ concept:"<span class=\"en\">keep + O + V-ing</span> 句型＋時間介系詞 <span class=\"en\">until</span> 的語意範圍，並認識 <span class=\"en\">the very + 名詞</span> 的強調用法。"},
+
+{n:42, stem:'<span class="blank">__42__</span> unexpected endings, Christie is good at building mystery along the way.',
+ ans:"(E) known for",
+ exp:"句首為分詞片語，主詞是 Christie：<span class=\"en\">(Being) Known for unexpected endings, Christie is ...</span>＝以出人意表的結局聞名。<span class=\"en\">be known for + N</span>（以……聞名）為固定搭配。",
+ notes:[["(E)","<span class=\"en\">known for</span>（以……而聞名）。為正解。比較：<span class=\"en\">be known as</span>（以……身分為人所知）、<span class=\"en\">be known to sb.</span>（為某人所知）——三者介系詞不同、語意不同。"],
+        ["(B)","<span class=\"en\">suspected of</span>（被懷疑）。語意負面，且 Christie 並非因「結局」被懷疑；此牌的落點在第 47 題。"],
+        ["(A)","<span class=\"en\">on the other hand</span>。不能直接接名詞 <span class=\"en\">unexpected endings</span>。"]],
+ concept:"分詞構句（過去分詞片語置句首表被動狀態）＋<span class=\"en\">be known for / as / to</span> 的介系詞辨析。"},
+
+{n:43, stem:'Most of the characters ... have dark secrets, tell lies, and turn <span class="blank">__43__</span> one another.',
+ ans:"(AD) against",
+ exp:"三個對等動詞 <span class=\"en\">have ... tell ... turn ...</span> 描寫角色的負面行為，<span class=\"en\">turn against sb.</span>（反目、背叛某人）與 <span class=\"en\">dark secrets</span>、<span class=\"en\">tell lies</span> 的語氣一致。<span class=\"en\">one another</span>＝彼此（三者以上）。",
+ notes:[["(AD)","<span class=\"en\">against</span>（prep. 對抗、反對）。<span class=\"en\">turn against one another</span>＝互相反目，為正解。"],
+        ["(AC)","<span class=\"en\">until</span>。<span class=\"en\">turn until one another</span> 結構錯誤（until 之後應接時間）。"],
+        ["(D)","<span class=\"en\">on purpose</span>（故意地）為副詞片語，無法接受詞 <span class=\"en\">one another</span>。"]],
+ concept:"動詞片語 <span class=\"en\">turn against</span> 的語意＋對等連接（parallelism）：三個並列動詞的語氣必須一致，這也是檢查答案的好方法。"},
+
+{n:44, stem:'Just when her husband said she was <span class="blank">__44__</span> forever, she was found safe at a hotel.',
+ ans:"(AB) gone",
+ exp:"<span class=\"en\">she was ____ forever</span> 需要主詞補語（形容詞）。<span class=\"en\">be gone</span>（已離去、不在了，此處暗示「永遠消失／死去」）與下半句 <span class=\"en\">she was found safe</span>（被發現安然無恙）形成戲劇性反差，<span class=\"en\">Just when</span>（就在……之際）更強化這個轉折。",
+ notes:[["(AB)","<span class=\"en\">gone</span>（adj. 走了的、消失的）。<span class=\"en\">be gone forever</span>＝永遠不見了，為正解。"],
+        ["(C)","<span class=\"en\">missing</span>（失蹤的）。語意接近，但 <span class=\"en\">missing</span> 這張牌在第 40 題有唯一的結構落點（<span class=\"en\">the ____ puzzle</span>）；且 <span class=\"en\">missing forever</span> 不如 <span class=\"en\">gone forever</span> 自然，後者才是英文裡表「永別」的慣用語。"],
+        ["(B)","<span class=\"en\">suspected of</span>。<span class=\"en\">she was suspected of forever</span> 結構不完整（<span class=\"en\">of</span> 後須接名詞或 V-ing）。"]],
+ concept:"主詞補語的詞性要求＋近義字的慣用搭配強弱（<span class=\"en\">gone forever</span> vs. <span class=\"en\">missing</span>），以及一對一對應下的「資源分配」思考。"},
+
+{n:45, stem:'Most people believed she tricked her husband by running away <span class="blank">__45__</span> to punish him for cheating.',
+ ans:"(D) on purpose",
+ exp:"<span class=\"en\">tricked her husband</span>（騙了丈夫）＋<span class=\"en\">to punish him</span>（為了懲罰他）都指向「有意圖的行為」，故需副詞片語 <span class=\"en\">on purpose</span>（故意地）修飾 <span class=\"en\">running away</span>。",
+ notes:[["(D)","<span class=\"en\">on purpose</span>（故意地）＝<span class=\"en\">deliberately</span>／<span class=\"en\">intentionally</span>，反義 <span class=\"en\">by accident</span>（意外地）。為正解。"],
+        ["(AD)","<span class=\"en\">against</span>。<span class=\"en\">running away against to punish</span> 結構錯誤。"],
+        ["(A)","<span class=\"en\">on the other hand</span>。語意為對比轉折，與同句的「目的」語意衝突，且位置不合。"]],
+ concept:"副詞片語修飾動詞的語意一致性。此題同時測驗 <span class=\"en\">on purpose</span> 與 <span class=\"en\">on the other hand</span> 的形式混淆（兩者都以 on 開頭，屬刻意設計的形似誘答）。"},
+
+{n:46, stem:'Doctors, <span class="blank">__46__</span>, thought she was just really sick from too much stress.',
+ ans:"(A) on the other hand",
+ exp:"前句是「大多數人」的看法（故意逃跑報復），本句是「醫生」的看法（她其實是壓力過大而生病）——兩種相反觀點並列，需要對比用的連接副詞，且以逗號插入主詞之後。",
+ notes:[["(A)","<span class=\"en\">on the other hand</span>（另一方面）。表對比，置於兩逗號之間作插入語，為正解。類似用法：<span class=\"en\">however</span>、<span class=\"en\">in contrast</span>。"],
+        ["(D)","<span class=\"en\">on purpose</span>（故意地）。語意不合——醫生的判斷與「故意」無關，而且此牌已是第 45 題的唯一解。"],
+        ["(AC)","<span class=\"en\">until</span>。介系詞無法單獨作插入語。"]],
+ concept:"連接副詞作插入語的標點與功能（觀點對比），並練習辨識「兩個不同主體對同一事件的不同解讀」——這是閱讀測驗中常考的 secondary message。"},
+
+{n:47, stem:'<span class="blank">__47__</span> planning her own 11-day disappearance, Christie stayed away from people, divorced her husband, and kept writing.',
+ ans:"(B) suspected of",
+ exp:"句首分詞片語修飾主詞 Christie，空格後接 V-ing（<span class=\"en\">planning</span>），需要能接 <span class=\"en\">of + V-ing</span> 的結構。<span class=\"en\">be suspected of V-ing</span>（被懷疑做了某事）→ 分詞構句 <span class=\"en\">(Being) Suspected of planning ...</span>＝因被懷疑自導自演那 11 天的失蹤……。",
+ notes:[["(B)","<span class=\"en\">suspected of</span>（<span class=\"en\">suspect sb. of V-ing</span> 的被動）。為正解，與下文「避開人群、離婚、持續寫作」的後果相連貫。"],
+        ["(E)","<span class=\"en\">known for</span>（以……聞名）。<span class=\"en\">known for planning her own disappearance</span> 文法可通，但語意變成「以策劃失蹤著名」，與段落中「眾說紛紜、未有定論」的懸疑調性不符；且此牌為第 42 題的唯一解。"],
+        ["(AD)","<span class=\"en\">against</span>。<span class=\"en\">against planning</span> 語意變成「反對策劃」，與全段敘事不合。"]],
+ concept:"分詞構句（過去分詞置句首）＋<span class=\"en\">suspect sb. of V-ing</span> 的被動轉換。本篇 8 格恰好 8 張牌，因此「每張牌只能用一次」是最強的檢查工具：答完務必回頭核對是否有牌重複或剩餘。"}
+]});
+
+SECTIONS.push({id:"s4c", title:"IV-[C] 雜誌　Melamine Sponge（48–57）", note:"科普說明文。重點：被動語態、動名詞作主詞、以及「優點／缺點」的段落轉折。",
+ passages:[{title:"Passage [C] 雜誌　The Melamine Sponge",
+  html:"A melamine sponge makes even the most stubborn stain easily <b>__48__</b> from your dirty sink, clearing it in no time. This cleaning tool has incredible physical <b>__49__</b>. No matter how hard you scrub, it holds its shape without <b>__50__</b> like a broken cookie. <b>__51__</b> heavy dirt from hard surfaces becomes quick and easy.<br><br>Even though the melamine sponge is handy, it has its <b>__52__</b>. The sponge is rough and can easily scratch delicate <b>__53__</b>, such as computer screens, car paint, and non-stick pans. Thus, it is <b>__54__</b> that we test the sponge on a small, hidden area before using it on a whole surface.<br><br>Also, the sponge is easily <b>__55__</b> by hot water and oil. When this happens, tiny bits of plastic can start <b>__56__</b> the sponge. Because of these drawbacks, we should rinse the surface with water after cleaning to wash away any leftover particles. Every cleaning tool has its pros and cons, and the melamine sponge is no <b>__57__</b>.",
+  bank:["(A) strength","(B) removed","(C) coming off","(D) materials","(E) falling apart","(AB) broken down","(AC) wiping off","(AD) advised","(AE) exception","(BC) limits"]}],
+ items:[
+{n:48, stem:'A melamine sponge makes even the most stubborn stain easily <span class="blank">__48__</span> from your dirty sink ...',
+ ans:"(B) removed",
+ exp:"句型為 <span class=\"en\">make + O + 受詞補語</span>。污垢是「被清除」，故補語用過去分詞表被動：<span class=\"en\">make the stain easily removed from ...</span>＝讓污垢容易被從水槽上清除。<span class=\"en\">remove A from B</span> 的 <span class=\"en\">from</span> 正是結構線索。",
+ notes:[["(B)","<span class=\"en\">removed</span>（<span class=\"en\">remove</span> v. 移除、清除）。過去分詞作受詞補語，為正解。"],
+        ["(C)","<span class=\"en\">coming off</span>（脫落）為現在分詞，表主動。污垢「自己脫落」雖勉強可解，但 <span class=\"en\">coming off</span> 在第 56 題有唯一落點，且本句 <span class=\"en\">from your dirty sink</span> 更適合 <span class=\"en\">removed from</span> 的搭配。"],
+        ["(AB)","<span class=\"en\">broken down</span>（被分解、故障）。語意是「污垢被分解」，與 <span class=\"en\">from</span> 搭配不自然；此牌在第 55 題（遇熱水與油）才是唯一解。"]],
+ concept:"<span class=\"en\">make + O + p.p.</span> 的受詞補語被動用法，以及靠介系詞（<span class=\"en\">from</span>）鎖定動詞搭配的技巧。"},
+
+{n:49, stem:'This cleaning tool has incredible physical <span class="blank">__49__</span>.',
+ ans:"(A) strength",
+ exp:"<span class=\"en\">incredible physical ____</span>：形容詞 <span class=\"en\">physical</span>（物理的、物質上的）之後必須是名詞。下一句 <span class=\"en\">No matter how hard you scrub, it holds its shape</span>（再怎麼刷都能維持形狀）正是在解釋「物理強度」。",
+ notes:[["(A)","<span class=\"en\">strength</span>（n. 強度、力量；形容詞為 <span class=\"en\">strong</span>）。<span class=\"en\">physical strength</span> 為正解。"],
+        ["(BC)","<span class=\"en\">limits</span>（n. 限制、極限）。語意相反——本句是在稱讚它的優點，<span class=\"en\">limits</span> 屬第二段的缺點（第 52 題）。"],
+        ["(D)","<span class=\"en\">materials</span>（n. 材質、材料）。<span class=\"en\">physical materials</span> 語意空泛，且無法被 <span class=\"en\">incredible</span>（驚人的）合理修飾，也無法解釋下一句的「維持形狀」。"]],
+ concept:"形容詞＋名詞的搭配與「下一句即定義」的閱讀策略：遇到抽象名詞空格，先看後句有沒有在解釋它。"},
+
+{n:50, stem:'No matter how hard you scrub, it holds its shape without <span class="blank">__50__</span> like a broken cookie.',
+ ans:"(E) falling apart",
+ exp:"<span class=\"en\">without</span> 是介系詞，後接動名詞（V-ing）。<span class=\"en\">fall apart</span>（崩解、分崩離析）與 <span class=\"en\">like a broken cookie</span>（像一塊破掉的餅乾）的比喻完全吻合，也與 <span class=\"en\">holds its shape</span> 形成對照。",
+ notes:[["(E)","<span class=\"en\">falling apart</span>（<span class=\"en\">fall apart</span> 崩解、散掉）。為正解。"],
+        ["(AB)","<span class=\"en\">broken down</span> 為過去分詞，<span class=\"en\">without broken down</span> 結構錯誤（without 後須為 V-ing 或名詞）。"],
+        ["(C)","<span class=\"en\">coming off</span>（脫落）。語意偏「表面掉下來」，無法呼應「像餅乾一樣碎裂」的整體崩解意象。"]],
+ concept:"介系詞後接動名詞（<span class=\"en\">without V-ing</span>）＋明喻（simile，<span class=\"en\">like + N</span>）對答案的鎖定作用。"},
+
+{n:51, stem:'<span class="blank">__51__</span> heavy dirt from hard surfaces becomes quick and easy.',
+ ans:"(AC) wiping off",
+ exp:"本句動詞為單數的 <span class=\"en\">becomes</span>，主詞必須是單數名詞性成分——動名詞片語正好視為單數。<span class=\"en\">Wiping off heavy dirt from hard surfaces</span>（把厚重污垢從硬表面擦掉）作主詞，語意與結構皆成立。",
+ notes:[["(AC)","<span class=\"en\">wiping off</span>（<span class=\"en\">wipe off</span> 擦掉）。動名詞作主詞，為正解。"],
+        ["(E)","<span class=\"en\">falling apart</span> 為不及物，不能接受詞 <span class=\"en\">heavy dirt</span>，且已是第 50 題的解。"],
+        ["(B)","<span class=\"en\">removed</span>（過去分詞）。<span class=\"en\">Removed heavy dirt ... becomes</span> 結構錯誤；若要作主詞應為 <span class=\"en\">Removing</span>。這組 removed／wiping off 考的就是「分詞 vs. 動名詞」的功能差異。"]],
+ concept:"動名詞片語作主詞（視為單數，動詞用 <span class=\"en\">becomes</span>）＋及物／不及物的檢查。看到句首空格＋句中單數動詞，就該想到 V-ing 作主詞。"},
+
+{n:52, stem:'Even though the melamine sponge is handy, it has its <span class="blank">__52__</span>.',
+ ans:"(BC) limits",
+ exp:"<span class=\"en\">Even though ... is handy</span>（雖然好用）為讓步，轉折後必須是缺點：<span class=\"en\">it has its limits</span>＝它也有其限制。<span class=\"en\">have one’s limits</span> 為固定用法，且下文列舉刮傷螢幕、車漆等正是「限制」的內容。",
+ notes:[["(BC)","<span class=\"en\">limits</span>（n. 限制、極限，常用複數）。為正解，與段末 <span class=\"en\">drawbacks</span>（缺點）、<span class=\"en\">cons</span> 同一語意場。"],
+        ["(A)","<span class=\"en\">strength</span>（強度、優點）。與 <span class=\"en\">Even though</span> 的讓步轉折方向相反；且已是第 49 題的解。"],
+        ["(AE)","<span class=\"en\">exception</span>（例外）。<span class=\"en\">has its exception</span> 語意不通，此牌為全文最後一句的結論用語（第 57 題）。"]],
+ concept:"讓步連接詞決定後句的「評價極性」＋固定搭配 <span class=\"en\">have one’s limits</span>。本題是段落結構題：讀出第二段是「缺點段」，答案就跑不掉。"},
+
+{n:53, stem:'The sponge is rough and can easily scratch delicate <span class="blank">__53__</span>, such as computer screens, car paint, and non-stick pans.',
+ ans:"(D) materials",
+ exp:"空格須為複數名詞，並能被 <span class=\"en\">such as</span> 後面三個例子（電腦螢幕、車漆、不沾鍋）所涵蓋——它們的共同點是「材質表面」，故 <span class=\"en\">delicate materials</span>（脆弱的材質）最恰當。",
+ notes:[["(D)","<span class=\"en\">materials</span>（n. 材質、材料）。為正解；<span class=\"en\">such as</span> 所列三者都是容易被刮傷的材質。"],
+        ["(BC)","<span class=\"en\">limits</span>（限制）。抽象名詞無法被 <span class=\"en\">scratch</span>（刮傷）這個具體動作當受詞。"],
+        ["(A)","<span class=\"en\">strength</span>（強度）。不可數名詞且語意不合。"]],
+ concept:"<span class=\"en\">such as</span> 所引導的例子即「上位詞（superordinate）」的線索：答案必須是能包含所有例子的那個類別詞。這是文意選填最可靠的解法之一。"},
+
+{n:54, stem:'Thus, it is <span class="blank">__54__</span> that we test the sponge on a small, hidden area before using it on a whole surface.',
+ ans:"(AD) advised",
+ exp:"句型為 <span class=\"en\">It is + p.p. + that + S + (should) V</span> 的虛主詞句。<span class=\"en\">It is advised that we test ...</span>＝建議我們先測試。注意 <span class=\"en\">that</span> 子句動詞用原形 <span class=\"en\">test</span>（<span class=\"en\">should</span> 省略），這是「建議／要求」類動詞的假設語氣用法。",
+ notes:[["(AD)","<span class=\"en\">advised</span>（<span class=\"en\">advise</span> v. 建議）。<span class=\"en\">It is advised that S + (should) V</span> 為正解，呼應 <span class=\"en\">Thus</span>（因此）的建議語氣。"],
+        ["(B)","<span class=\"en\">removed</span>（被移除）。<span class=\"en\">It is removed that ...</span> 語意不通。"],
+        ["(AB)","<span class=\"en\">broken down</span>。<span class=\"en\">It is broken down that ...</span> 不成句型。"]],
+ concept:"虛主詞 <span class=\"en\">It is + p.p. + that</span> 句型，以及建議類動詞後 <span class=\"en\">that</span> 子句用「原形動詞（should 省略）」的假設語氣——句中 <span class=\"en\">we test</span> 而非 <span class=\"en\">we tested</span> 就是提示。"},
+
+{n:55, stem:'Also, the sponge is easily <span class="blank">__55__</span> by hot water and oil.',
+ ans:"(AB) broken down",
+ exp:"<span class=\"en\">be + p.p. + by + 行為者</span> 的被動語態。<span class=\"en\">break down</span>（分解、使崩壞）→ <span class=\"en\">be broken down by hot water and oil</span>＝被熱水與油分解。下一句 <span class=\"en\">tiny bits of plastic</span>（細小塑膠碎屑）正是分解後的結果。",
+ notes:[["(AB)","<span class=\"en\">broken down</span>（被分解）。為正解。<span class=\"en\">break down</span> 一字多義：分解／故障／崩潰／細分。"],
+        ["(E)","<span class=\"en\">falling apart</span> 為現在分詞（主動），不能用於 <span class=\"en\">be ... by</span> 的被動結構；且已是第 50 題的解。"],
+        ["(C)","<span class=\"en\">coming off</span> 同為現在分詞，<span class=\"en\">is coming off by hot water</span> 結構與語意皆不合（<span class=\"en\">by</span> 需搭被動）。"]],
+ concept:"被動語態的辨識（<span class=\"en\">by</span> 引導行為者就是最強訊號）＋動詞片語 <span class=\"en\">break down</span> 的多義。"},
+
+{n:56, stem:'When this happens, tiny bits of plastic can start <span class="blank">__56__</span> the sponge.',
+ ans:"(C) coming off",
+ exp:"<span class=\"en\">start + V-ing/to V</span>（開始做某事）。塑膠碎屑是「從海綿上剝落」，<span class=\"en\">come off (sth.)</span>＝從……脫落，故為 <span class=\"en\">coming off the sponge</span>。",
+ notes:[["(C)","<span class=\"en\">coming off</span>（<span class=\"en\">come off</span> 脫落、掉下來）。為正解，且與下一句「清洗殘留顆粒」的建議前後呼應。"],
+        ["(AC)","<span class=\"en\">wiping off</span>（擦掉）。語意方向相反：擦拭者是人，碎屑不會「擦掉海綿」；且已是第 51 題的解。"],
+        ["(AB)","<span class=\"en\">broken down</span> 為過去分詞，<span class=\"en\">start broken down</span> 結構錯誤。"]],
+ concept:"<span class=\"en\">start + V-ing</span> 句型＋動詞片語的「施事者（agent）」檢查：問自己「這個動作是誰做的」，就能分辨 come off（自己掉落）與 wipe off（被人擦掉）。"},
+
+{n:57, stem:'Every cleaning tool has its pros and cons, and the melamine sponge is no <span class="blank">__57__</span>.',
+ ans:"(AE) exception",
+ exp:"<span class=\"en\">be no exception</span>（不例外）為固定用法：既然「每一種清潔工具都有優缺點」，那麼美耐皿海綿「也不例外」。<span class=\"en\">pros and cons</span>＝優缺點。",
+ notes:[["(AE)","<span class=\"en\">exception</span>（n. 例外；動詞 <span class=\"en\">except</span>）。<span class=\"en\">X is no exception.</span> 為正解，是結論段的經典收尾句。"],
+        ["(BC)","<span class=\"en\">limits</span>（限制）。<span class=\"en\">is no limits</span> 單複數不一致（<span class=\"en\">no</span> 後接 limits 需為 <span class=\"en\">has no limits</span>），且語意與「不例外」不同。"],
+        ["(A)","<span class=\"en\">strength</span>。<span class=\"en\">is no strength</span> 語意不通。"]],
+ concept:"固定句型 <span class=\"en\">be no exception</span> 與結論段的功能（總結全文、呼應首段）。本篇 10 格 10 張牌剛好用盡，請務必用「排除法＋逐張核對」收尾。"}
+]});
+
+SECTIONS.push({id:"s4d", title:"IV-[D] 雜誌　Fingerprints（58–68）", note:"11 格、11 張牌，完全一對一。重點在動詞語意精確度（suggest／confirm／identify／sense）與分詞片語、連接副詞。",
+ passages:[{title:"Passage [D] 雜誌　Fun Facts about Fingerprints",
+  html:"Do you know that no two people, not even twins, <b>__58__</b> the same fingerprints? Do you know that fingerprints do more than catch wrongdoers? The fun facts that follow will surprise you!<br><br>Early researchers, though without proof, <b>__59__</b> that each fingerprint is unique because it is formed by genes and a baby’s experiences inside the womb. As we grow, our fingerprints get bigger, but they always stay the same as their <b>__60__</b> pattern. Because of their uniqueness, fingerprints are ideal tools to <b>__61__</b> criminals. With no two humans <b>__62__</b> the same pattern, the police can track down an offender even if only tiny amounts of fingerprints are found.<br><br>However, police work is not the only place fingerprints are useful. When we touch an object, the small lines on our skin make tiny vibrations. These vibrations help our fingers <b>__63__</b> how soft silk is and how coarse wool feels. <b>__64__</b>, fingerprints give us a better grip so things do not slip out of our hands easily.<br><br>You may want to know if fingerprints can be found on animals. Scientists once guessed that koalas, animals <b>__65__</b> to us, have fingerprints, and now studies <b>__66__</b> their early guess, proving it right. Even more surprising is that their patterns are almost <b>__67__</b> to ours. Koalas need to grab tree branches and check the leaves before eating. <b>__68__</b>, fingerprints are just as important for them as they are for us.",
+  bank:["(A) sense","(B) suggest","(C) confirm","(D) identify","(E) sharing","(AB) have","(AC) unrelated","(AD) identical","(AE) for these reasons","(BC) what’s more","(BD) original"]}],
+ items:[
+{n:58, stem:'Do you know that no two people, not even twins, <span class="blank">__58__</span> the same fingerprints?',
+ ans:"(AB) have",
+ exp:"<span class=\"en\">that</span> 子句缺少主要動詞。主詞 <span class=\"en\">no two people</span> 視為複數，故用原形 <span class=\"en\">have</span>：<span class=\"en\">no two people have the same fingerprints</span>＝沒有任何兩個人的指紋相同（否定主詞的經典表達）。",
+ notes:[["(AB)","<span class=\"en\">have</span>（v. 擁有）。為正解。<span class=\"en\">No two + 複數名詞 + 複數動詞</span> 是陳述「獨一無二」的標準句式。"],
+        ["(E)","<span class=\"en\">sharing</span>（分詞）。<span class=\"en\">no two people sharing ...</span> 缺少主要動詞，句子不完整；它在第 62 題的 <span class=\"en\">with + O + V-ing</span> 結構中才正確。"],
+        ["(AD)","<span class=\"en\">identical</span>（形容詞）。<span class=\"en\">no two people identical the same</span> 無動詞，結構錯誤。"]],
+ concept:"<span class=\"en\">that</span> 名詞子句須為完整句（必須有主要動詞）＋<span class=\"en\">no two + 複數名詞</span> 的主動詞一致。先確認「這一格要的是動詞還是分詞」，可一次刪掉大半選項。"},
+
+{n:59, stem:'Early researchers, though without proof, <span class="blank">__59__</span> that each fingerprint is unique ...',
+ ans:"(B) suggest",
+ exp:"<span class=\"en\">though without proof</span>（雖然沒有證據）是關鍵：沒有證據時只能「提出看法、推測」，不能「證實」。<span class=\"en\">suggest that + S + V</span>＝認為／指出，語氣較弱，正符合「早期研究者尚無實證」的語境。",
+ notes:[["(B)","<span class=\"en\">suggest</span>（v. 建議；顯示、認為）。此處為「認為、提出看法」之意，為正解。一字多義提醒：<span class=\"en\">Evidence suggests that ...</span>＝證據顯示……。"],
+        ["(C)","<span class=\"en\">confirm</span>（v. 證實、確認）。語氣太強，與 <span class=\"en\">without proof</span> 直接矛盾；它的落點在第 66 題（<span class=\"en\">now studies confirm</span>）。本題與 66 題形成「推測 → 證實」的對照，是本篇最重要的設計。"],
+        ["(D)","<span class=\"en\">identify</span>（v. 辨識、確認身分）。後接受詞（人或物），不接 <span class=\"en\">that</span> 子句，結構錯誤。"]],
+ concept:"動詞的「語氣強度（hedging）」與上下文一致：<span class=\"en\">suggest</span>（推測）vs. <span class=\"en\">confirm</span>（證實）。學術英文中這類強弱差異是閱讀理解的核心，也是 EMI 課程必備能力。"},
+
+{n:60, stem:'... our fingerprints get bigger, but they always stay the same as their <span class="blank">__60__</span> pattern.',
+ ans:"(BD) original",
+ exp:"空格在所有格 <span class=\"en\">their</span> 與名詞 <span class=\"en\">pattern</span> 之間，需形容詞。語意為「與最初的紋路型態保持相同」——雖然變大，紋路不變，故用 <span class=\"en\">original</span>（原本的、最初的）。",
+ notes:[["(BD)","<span class=\"en\">original</span>（adj. 最初的、原本的；n. 原作）。<span class=\"en\">their original pattern</span> 為正解，與 <span class=\"en\">As we grow</span> 的時間推移形成對比。"],
+        ["(AD)","<span class=\"en\">identical</span>（adj. 完全相同的）。<span class=\"en\">their identical pattern</span> 語意重複且不自然（前面已有 <span class=\"en\">stay the same as</span>）；它的落點在第 67 題（<span class=\"en\">identical to ours</span>）。"],
+        ["(AC)","<span class=\"en\">unrelated</span>（adj. 無關的）。語意相反。"]],
+ concept:"形容詞的前位修飾＋語意冗贅檢查。<span class=\"en\">stay the same as ...</span> 已表「相同」，空格要補的是「相同於什麼時候的紋路」，所以答案必須帶時間概念。"},
+
+{n:61, stem:'Because of their uniqueness, fingerprints are ideal tools to <span class="blank">__61__</span> criminals.',
+ ans:"(D) identify",
+ exp:"<span class=\"en\">tools to + V</span>（用來做某事的工具），空格後直接接受詞 <span class=\"en\">criminals</span>，需及物動詞。<span class=\"en\">identify</span>（辨識、確認身分）正是指紋的功能，呼應前文 <span class=\"en\">catch wrongdoers</span>。",
+ notes:[["(D)","<span class=\"en\">identify</span>（v. 辨識、指認）。<span class=\"en\">identify criminals</span>＝指認罪犯，為正解。名詞 <span class=\"en\">identity</span>（身分）、<span class=\"en\">identification</span>。"],
+        ["(C)","<span class=\"en\">confirm</span>（證實）。<span class=\"en\">confirm criminals</span> 搭配不自然（應為 <span class=\"en\">confirm sb.’s identity</span>），且此牌屬第 66 題。"],
+        ["(A)","<span class=\"en\">sense</span>（v. 感覺到）。指紋不是用來「感覺罪犯」，語意不合；其落點在第 63 題（感知材質）。"]],
+ concept:"不定詞表用途（<span class=\"en\">tools to V</span>）＋近義動詞的搭配精確度。四個動詞 suggest／confirm／identify／sense 各有專屬搭配，這題考的是「字義的使用範圍」而非中文翻譯。"},
+
+{n:62, stem:'With no two humans <span class="blank">__62__</span> the same pattern, the police can track down an offender ...',
+ ans:"(E) sharing",
+ exp:"<span class=\"en\">With + O + V-ing</span> 為「附帶狀況」結構（with 的獨立分詞構句）：<span class=\"en\">With no two humans sharing the same pattern</span>＝由於沒有兩個人共有相同紋路。<span class=\"en\">share</span> 為及物動詞，可接 <span class=\"en\">the same pattern</span>。",
+ notes:[["(E)","<span class=\"en\">sharing</span>（<span class=\"en\">share</span> v. 共有、分享）。<span class=\"en\">With + N + V-ing</span> 為正解。"],
+        ["(AB)","<span class=\"en\">have</span>（原形）。<span class=\"en\">With no two humans have ...</span> 結構錯誤——with 結構中不能放原形動詞；且此牌為第 58 題的解。這組 have／sharing 考的正是「主要動詞 vs. 分詞」的分工。"],
+        ["(AD)","<span class=\"en\">identical</span>。<span class=\"en\">With no two humans identical the same pattern</span> 缺少動詞，結構錯誤（若要用需改為 <span class=\"en\">identical in pattern</span>）。"]],
+ concept:"<span class=\"en\">with + 受詞 + 分詞</span> 的附帶狀況用法（高一分詞構句重點）。判準：with 之後若已有名詞，接下來要用 V-ing／p.p./形容詞片語，不能用原形或限定動詞。"},
+
+{n:63, stem:'These vibrations help our fingers <span class="blank">__63__</span> how soft silk is and how coarse wool feels.',
+ ans:"(A) sense",
+ exp:"<span class=\"en\">help + O + (to) V</span>（幫助某人做某事），空格要原形動詞；後接兩個 <span class=\"en\">how</span> 名詞子句（絲多柔軟、羊毛多粗糙），語意是「感知、察覺」，故為 <span class=\"en\">sense</span>。",
+ notes:[["(A)","<span class=\"en\">sense</span>（v. 感覺到、察覺；n. 感官、意義）。<span class=\"en\">sense how + adj. + S + be</span> 為正解。"],
+        ["(D)","<span class=\"en\">identify</span>（辨識身分）。用於辨認特定對象（人、物），不用於「感受質地」，且已是第 61 題的解。"],
+        ["(C)","<span class=\"en\">confirm</span>（證實）。手指不會「證實」觸感，語意不合。"]],
+ concept:"<span class=\"en\">help + O + 原形動詞</span> 的使役類句型＋<span class=\"en\">how + adj. + S + V</span> 名詞子句（間接問句的語序：主詞動詞不倒裝）。"},
+
+{n:64, stem:'<span class="blank">__64__</span>, fingerprints give us a better grip so things do not slip out of our hands easily.',
+ ans:"(BC) what’s more",
+ exp:"前句講指紋幫助「感知材質」，本句再補一項好處「抓握更穩」。兩者是「功能的累加」，故用 <span class=\"en\">What’s more</span>（更有甚者、此外）。",
+ notes:[["(BC)","<span class=\"en\">what’s more</span>（此外、更重要的是）＝<span class=\"en\">in addition</span>、<span class=\"en\">besides</span>。為正解。"],
+        ["(AE)","<span class=\"en\">for these reasons</span>（因為這些原因）表結果／總結。本句不是前句的結果，而是並列的另一項功能；此牌屬全文最後一句（第 68 題）。"],
+        ["(AC)","<span class=\"en\">unrelated</span>（無關的）為形容詞，無法作句首連接副詞。"]],
+ concept:"連接副詞的邏輯分類：累加（what’s more）vs. 因果總結（for these reasons）。本篇把兩者都放進牌堆，就是要測你是否真的判讀前後句關係，而不是憑印象挑一個。"},
+
+{n:65, stem:'Scientists once guessed that koalas, animals <span class="blank">__65__</span> to us, have fingerprints ...',
+ ans:"(AC) unrelated",
+ exp:"<span class=\"en\">animals ____ to us</span> 為同位語，說明無尾熊與人類的關係。<span class=\"en\">be unrelated to sb.</span>（與……無親緣關係）＋ 前後文的驚奇語氣（<span class=\"en\">Even more surprising ...</span>）——正因為血緣無關，卻有近乎相同的紋路，才令人意外。",
+ notes:[["(AC)","<span class=\"en\">unrelated</span>（adj. 無關的、無親屬關係的；<span class=\"en\">un-</span>＋<span class=\"en\">related</span>）。<span class=\"en\">unrelated to us</span> 為正解。"],
+        ["(AD)","<span class=\"en\">identical</span>（完全相同的）。若說「與我們完全相同的動物」則語意荒謬，且會使後文 <span class=\"en\">Even more surprising</span> 失去驚奇效果；此牌屬第 67 題。"],
+        ["(BD)","<span class=\"en\">original</span>（最初的）。<span class=\"en\">original to us</span> 不成搭配。"]],
+ concept:"同位語結構（名詞＋形容詞片語）＋<span class=\"en\">be unrelated / identical to</span> 的介系詞搭配。也測驗段落語氣：作者的「驚奇」從何而來，決定了這一格的語意方向。"},
+
+{n:66, stem:'... and now studies <span class="blank">__66__</span> their early guess, proving it right.',
+ ans:"(C) confirm",
+ exp:"<span class=\"en\">now</span>（現在）與 <span class=\"en\">once guessed</span>（曾經推測）形成時間對照，且後有 <span class=\"en\">proving it right</span>（證明它正確）作補充說明，故動詞必須是「證實」。<span class=\"en\">confirm</span>＝證實、確認。",
+ notes:[["(C)","<span class=\"en\">confirm</span>（v. 證實、確認）。<span class=\"en\">studies confirm the guess</span> 為正解，與 <span class=\"en\">proving it right</span> 同義相扣。"],
+        ["(B)","<span class=\"en\">suggest</span>（顯示、認為）。語氣太弱，無法對應 <span class=\"en\">proving it right</span> 的確定性；此牌屬第 59 題。"],
+        ["(D)","<span class=\"en\">identify</span>（辨識）。<span class=\"en\">identify their guess</span> 搭配不當（辨識的受詞應為人或物件）。"]],
+ concept:"語氣強度與時間對照（<span class=\"en\">once guessed</span> → <span class=\"en\">now confirm</span>）＋分詞片語 <span class=\"en\">proving it right</span> 的同義提示。請把 59 與 66 兩題放在一起複習，這是本篇命題的核心軸線。"},
+
+{n:67, stem:'Even more surprising is that their patterns are almost <span class="blank">__67__</span> to ours.',
+ ans:"(AD) identical",
+ exp:"<span class=\"en\">be identical to sth.</span>（與……完全相同）。<span class=\"en\">almost identical to ours</span>＝幾乎與我們的一模一樣，正是 <span class=\"en\">Even more surprising</span>（更令人驚訝的是）所要強調的內容。句首為補語倒裝（<span class=\"en\">Even more surprising is that ...</span>）。",
+ notes:[["(AD)","<span class=\"en\">identical</span>（adj. 完全相同的）。<span class=\"en\">identical to/with</span> 為正解。注意 <span class=\"en\">ours</span>＝<span class=\"en\">our patterns</span>（所有格代名詞避免重複）。"],
+        ["(AC)","<span class=\"en\">unrelated</span>（無關的）。語意相反，且已是第 65 題的解。"],
+        ["(BD)","<span class=\"en\">original</span>（最初的）。<span class=\"en\">original to ours</span> 不成搭配，語意也不合。"]],
+ concept:"<span class=\"en\">be identical to</span> 搭配＋補語倒裝句（<span class=\"en\">Even more surprising is that ...</span>）＋所有格代名詞 <span class=\"en\">ours</span> 的指涉（anaphor）。"},
+
+{n:68, stem:'Koalas need to grab tree branches and check the leaves before eating. <span class="blank">__68__</span>, fingerprints are just as important for them as they are for us.',
+ ans:"(AE) for these reasons",
+ exp:"前句列出無尾熊需要指紋的理由（抓樹枝、檢查葉子），本句是「由此可知」的結論，故用 <span class=\"en\">For these reasons</span>（基於這些理由）。<span class=\"en\">as ... as</span> 為同等比較：對牠們和對我們一樣重要。",
+ notes:[["(AE)","<span class=\"en\">for these reasons</span>（基於這些原因）。表因果總結，為正解；<span class=\"en\">these</span> 回指前句列舉的需求（anaphor）。"],
+        ["(BC)","<span class=\"en\">what’s more</span>（此外）。表累加，但本句並非再補一項新資訊，而是收束全文；且已是第 64 題的解。"],
+        ["(A)","<span class=\"en\">sense</span>（感覺）。詞性不符，無法作句首連接語。"]],
+ concept:"因果總結連接詞＋<span class=\"en\">as + adj. + as</span> 同等比較句型。全篇 11 格 11 牌用盡，請以「每張牌只用一次」回頭驗算；若發現某牌被用兩次，必有一題錯。"}
+]});
+
+/* ============ V. 篇章結構 (5%) ============ */
+SECTIONS.push({id:"s5", title:"V. 篇章結構（5%，一題一分）", note:"篇章結構考「段落的黏著劑」：代名詞回指、時間順序、因果關係、以及首尾呼應。解題順序建議：先找最明確的首句與末句，再用 It / These / After all 等訊號填中間。",
+ passages:[{title:"Passage [A] 課本　My First Presentation（6 個選項填 5 格）",
+  html:"<b>__69__</b>. I felt so happy that I will never forget it. For a group math project last year, I was the speaker for my team. I wanted to make this boring topic a treat for the mind, but had no idea how to give a great presentation. <b>__70__</b> It told me to put fewer words on the PowerPoint slides and interact more with the class. It also offered some tricks to attract the audience’s attention. <b>__71__</b> After all, who would want to sit through another boring math class? On the day of the presentation, when I said, “a function is like a vending machine—you put in money, and you get a drink,” everyone laughed. <b>__72__</b> The moment I walked off the stage, I felt proud of my team. <b>__73__</b> I couldn't be happier that my team and I did this.",
+  bank:["(A) To do this, I tried my best to turn hard math ideas into daily-life experiences to keep everyone interested.","(B) Fortunately, AI was there for help.","(C) Even though making a presentation was tough, having AI made it much easier.","(D) When I said, “and a linear function is like buying boba tea—the more cups you buy, the more money you pay,” they had another good laugh.","(E) These days, the ability to catch everyone's attention during a presentation is more important than ever.","(AB) I can still remember being on cloud nine after my first presentation in high school."]}],
+ items:[
+{n:69, stem:'<span class="blank">__69__</span>. I felt so happy that I will never forget it.',
+ ans:"(AB)",
+ exp:"第 69 格是全文首句，必須提出「主題事件」，且要能被下一句的 <span class=\"en\">I felt so happy</span> 與 <span class=\"en\">it</span> 所回指。(AB) <span class=\"en\">I can still remember being on cloud nine after my first presentation in high school.</span>（我仍記得高中第一次報告後的欣喜若狂）正是主題句：<span class=\"en\">on cloud nine</span>（置身九霄雲上＝極度開心）與 <span class=\"en\">so happy</span> 完全呼應，<span class=\"en\">my first presentation</span> 則是後文 <span class=\"en\">it</span> 的先行詞。",
+ notes:[["(AB)","為正解。片語 <span class=\"en\">on cloud nine</span>＝<span class=\"en\">extremely happy</span>，是本題最強的語意連結（與 <span class=\"en\">so happy</span> 同義重述）。"],
+        ["(E)","<span class=\"en\">These days, the ability to catch everyone's attention ... is more important than ever.</span> 為一般性論述（泛論現象），無法被 <span class=\"en\">it</span> 回指，也與「我很開心」的個人敘事語氣不接。本篇 6 選 5，未被使用的多餘選項是 (C)。"],
+        ["(C)","<span class=\"en\">Even though making a presentation was tough, having AI made it much easier.</span> 含總結語氣（讓步＋結論），看似可作結尾；但依學校公布答案，五格皆未使用此句——它是本篇唯一的多餘選項。"]],
+ concept:"主題句的功能＋代名詞回指（anaphor）：下一句的 <span class=\"en\">it</span> 必須在前句找到明確指涉對象。另測驗片語語意（<span class=\"en\">on cloud nine</span> 的比喻）。"},
+
+{n:70, stem:'... but had no idea how to give a great presentation. <span class="blank">__70__</span> It told me to put fewer words on the PowerPoint slides ...',
+ ans:"(B)",
+ exp:"關鍵在下一句的主詞 <span class=\"en\">It</span>——它必須有先行詞。(B) <span class=\"en\">Fortunately, AI was there for help.</span> 提供了單數先行詞 <span class=\"en\">AI</span>，且 <span class=\"en\">Fortunately</span>（幸運地）正好轉折前句的困境 <span class=\"en\">had no idea</span>（毫無頭緒）。",
+ notes:[["(B)","為正解。<span class=\"en\">had no idea</span>（問題）→ <span class=\"en\">Fortunately ... AI</span>（解方）→ <span class=\"en\">It told me ...</span>（解方的細節），三句形成「問題—解決」結構。"],
+        ["(A)","<span class=\"en\">To do this, I tried my best to turn hard math ideas into daily-life experiences ...</span> 中的 <span class=\"en\">this</span> 需回指一個已提出的「做法」，但此處尚未提出任何建議，順序顛倒。"],
+        ["(E)","泛論句，無法作為 <span class=\"en\">It</span> 的先行詞。"]],
+ concept:"代名詞 <span class=\"en\">It</span> 的先行詞判定＋「問題—解決（problem-solution）」的段落發展模式。這是篇章結構最高頻的解題線索。"},
+
+{n:71, stem:'It also offered some tricks to attract the audience’s attention. <span class="blank">__71__</span> After all, who would want to sit through another boring math class?',
+ ans:"(A)",
+ exp:"(A) <span class=\"en\">To do this, I tried my best to turn hard math ideas into daily-life experiences to keep everyone interested.</span>　<span class=\"en\">To do this</span> 的 <span class=\"en\">this</span> 回指前句 AI 的建議（吸引注意力的技巧）；而 <span class=\"en\">turn hard math ideas into daily-life experiences</span>（把數學概念轉化為生活經驗）正好預告了後文的「販賣機」與「珍奶」比喻，<span class=\"en\">After all</span>（畢竟）則說明這麼做的理由。",
+ notes:[["(A)","為正解。它同時向前接（<span class=\"en\">this</span>＝AI 的建議）、向後接（生活化比喻的實例），是典型的「承上啟下句」。"],
+        ["(D)","<span class=\"en\">When I said, “and a linear function is like buying boba tea ...”</span> 句首的 <span class=\"en\">and</span> 與 <span class=\"en\">another good laugh</span> 表示它必須接在「第一個笑點」之後，但此時販賣機的例子還沒出現，位置過早。"],
+        ["(C)","為本大題唯一未被使用的多餘選項；其總結語氣也無法銜接後面的 <span class=\"en\">After all</span> 反問句。"]],
+ concept:"<span class=\"en\">this / these</span> 的回指＋「承上啟下」句的雙向檢查：既要能接上文，也要能引出下文的例子。"},
+
+{n:72, stem:'... everyone laughed. <span class="blank">__72__</span> The moment I walked off the stage, I felt proud of my team.',
+ ans:"(D)",
+ exp:"(D) 以 <span class=\"en\">and</span> 開頭並說 <span class=\"en\">they had <u>another</u> good laugh</span>（他們又笑了一次）——<span class=\"en\">another</span> 必須有「第一次」在前，而前句 <span class=\"en\">everyone laughed</span> 正是第一次。兩個比喻（販賣機／珍奶）也形成平行結構。",
+ notes:[["(D)","為正解。<span class=\"en\">another</span> 這個字就是定位器：凡出現 another／also／too，前面一定要有同類事件。"],
+        ["(C)","為本大題未被使用的多餘選項。即使以語氣判斷，它放在此處也會打斷「台上說笑話—走下台」的敘事時序。"],
+        ["(E)","泛論句與現場敘事語境不合。"]],
+ concept:"序列標記（<span class=\"en\">another</span>）與敘事時間軸的連貫，以及平行舉例（parallel examples）的辨識。"},
+
+{n:73, stem:'... I felt proud of my team. <span class="blank">__73__</span> I couldn\'t be happier that my team and I did this.',
+ ans:"(E)",
+ exp:"末格之後是全文最後一句 <span class=\"en\">I couldn’t be happier that my team and I did this.</span>（我再開心不過了）。(E) <span class=\"en\">These days, the ability to catch everyone’s attention during a presentation is more important than ever.</span>（如今，簡報時抓住全場注意力的能力比以往更重要）放在這裡，作用是把個人經驗「拉高」為一個普遍的價值判斷：正因為這項能力在今天如此重要，作者才會為自己與團隊真正學到它而無比開心。這種「個人經驗 → 普遍意義 → 情感收束」是敘事文常見的收尾結構（zoom out）。",
+ notes:[["(E)","為正解。兩個線索：① <span class=\"en\">These days</span>（如今）把時間從過去敘事（<span class=\"en\">last year</span>、<span class=\"en\">On the day of the presentation</span>）拉回現在，標示文章進入結語；② <span class=\"en\">the ability to catch everyone’s attention</span> 正好回收第 70–71 格（AI 教的技巧、生活化比喻），讓最後一句的「開心」有了理由。"],
+        ["(C)","<span class=\"en\">Even though making a presentation was tough, having AI made it much easier.</span> 是本大題 6 選 5 中<b>唯一未被使用</b>的選項。它雖然也像結語，但重點落在「AI 讓事情變簡單」，與最後一句 <span class=\"en\">my team and I did this</span>（是我和團隊做到了）的焦點相反——結尾要肯定的是人，不是工具。"],
+        ["(A)","已用於第 71 格；且 <span class=\"en\">To do this</span> 在此沒有可回指的對象。"]],
+ concept:"敘事文的收尾結構（由個人經驗拉高到普遍意義）＋時間標記 <span class=\"en\">These days</span> 造成的視角轉換。6 選 5 題型的收尾檢查：不只要確認自己填的五格說得通，更要確認「被淘汰的那一個」在五格中都不是最佳解——這題的 (C) 讀起來很順，正是最容易讓人誤填的那一張牌。"}
+]});
+
+/* ============ VI. KUSO 文法 Unit 2 (8%) ============ */
+SECTIONS.push({id:"s6", title:"VI. KUSO 文法 Unit 2（8%，一題一分）", note:"本大題集中考「時態與時間副詞的配對」。核心判準只有一句話：時間副詞必須與時態相容。請一邊讀故事，一邊問自己「這句話的時間點在哪裡？」",
+ passages:[{title:"Passage　The Studio（故事全文）",
+  html:"After my third try at the color of the sky, I still couldn’t get it right and gave up. “<b>__74__</b>,” I announced to myself, and threw away my paint brush. My grandma passed away this summer, and I locked myself in the studio to paint <b>__75__</b>. However, no matter how much time I devoted, I couldn’t wrap my head around the idea that she was no longer with us. I always thought my grandma <b>__76__</b> my graduation ceremony one day. When did I miss the signs? I couldn’t stop blaming myself for not taking her to the hospital on time.<br><br>“You look tired!” someone yelled. I turned around shocked, knocking over the painting I had started three days <b>__77__</b>. “Oh no!” I sighed, bending down to pick up the half-finished portrait. “Oops! My bad—here, let me help you with that.” It was then that I realized it was Tom. “Yeah, I’m tired,” I said. “<b>__78__</b> and my fingers hurt.” Setting the painting back on the easel, Tom took a long look around the studio and marveled, “Look at all this work you’ve done! You’re painting so much these days. Oh, by the way, do you know….” He carried on, but my mind was already elsewhere, drifting back to the stripy cat sleeping by the window earlier. I crouched to look under the table and crossed to the furthest corner of the room, but couldn’t find her anywhere. “<b>__79__</b>” I muttered under my breath, Tom’s background chatter fading into white noise.<br><br>Hungry, I unwrapped a piece of cake and took a quick bite. Just as I was about to take another, Tom’s eyes lit up, “<b>__80__</b> I’m starving—mind if I have a bite?” I stared at Tom in disbelief and blurted out, “My cat just disappeared and my grandma just died!” Tears rolling down my cheeks, I wept in silence. I <b>__81__</b> it several times, but this was the first time I <b>__81__</b> it out loud. It was such a relief to finally let someone know that my most beloved person was no longer here."}],
+ items:[
+{n:74, stem:'“<span class="blank">__74__</span>,” I announced to myself, and threw away my paint brush.',
+ opts:[["A","I’m taking a break"],["B","I’ve been taking a break"],["C","I will have given up"],["D","I’ll be giving up by now"]],
+ ans:"A",
+ exp:"說話者剛放棄、丟下畫筆，宣告的是「從現在起我要休息一下」。現在進行式可表「最近安排好或即刻展開的動作」（<span class=\"en\">I’m taking a break.</span>＝我要休息一下了），語氣自然且符合當下情境。",
+ notes:[["A","現在進行式表「即將／現在開始的動作」。<span class=\"en\">take a break</span>（休息一下），為正解。"],
+        ["B","<span class=\"en\">I’ve been taking a break</span>（現在完成進行式）表「一直在休息」，但他剛剛才連試三次顏色、正在工作，與事實相反。"],
+        ["C","<span class=\"en\">I will have given up</span>（未來完成式）需搭配未來的時間點（如 <span class=\"en\">by tomorrow</span>），單獨使用不合語境。"],
+        ["D","<span class=\"en\">I’ll be giving up <u>by now</u></span>：未來進行式與 <span class=\"en\">by now</span>（到現在為止）時間矛盾，是本題最明顯的「時態與時間副詞衝突」陷阱。"]],
+ concept:"現在進行式表「近期安排／即刻動作」的用法，以及未來式與 <span class=\"en\">by now</span> 等時間副詞的相容性檢查。"},
+
+{n:75, stem:'My grandma passed away this summer, and I locked myself in the studio to paint <span class="blank">__75__</span>.',
+ opts:[["A","someday"],["B","lately"],["C","soon after"],["D","later this afternoon"]],
+ ans:"C",
+ exp:"主句動詞是過去式 <span class=\"en\">locked</span>，所指的時間必須是過去的某一點。<span class=\"en\">soon after</span>（不久之後）＝祖母過世後不久，與過去式完全相容，也符合敘事的時間推進。",
+ notes:[["A","<span class=\"en\">someday</span>（將來有一天）指未來，不能修飾過去式 <span class=\"en\">locked</span>。"],
+        ["B","<span class=\"en\">lately</span>（最近）通常與現在完成（進行）式連用（<span class=\"en\">I’ve been painting a lot lately.</span>），與單純過去式搭配不當。文中 Tom 說的 <span class=\"en\">You’re painting so much these days</span> 才是「最近」的正確表達方式。"],
+        ["C","<span class=\"en\">soon after</span>（不久之後）為正解，與過去式相容。"],
+        ["D","<span class=\"en\">later this afternoon</span>（今天下午稍晚）指未來，與過去式矛盾。"]],
+ concept:"時間副詞與時態的配對（過去式 ↔ <span class=\"en\">soon after / ago</span>；現在完成式 ↔ <span class=\"en\">lately / recently</span>；未來 ↔ <span class=\"en\">someday / later today</span>）。這是本大題反覆測驗的同一條原則。"},
+
+{n:76, stem:'I always thought my grandma <span class="blank">__76__</span> my graduation ceremony one day.',
+ opts:[["A","will be at"],["B","was going to be at"],["C","was at"],["D","had been at"]],
+ ans:"B",
+ exp:"主句 <span class=\"en\">thought</span> 為過去式，從屬子句須配合過去的視角；而 <span class=\"en\">one day</span>（有一天）指「當時看來的未來」，故用「過去未來式」<span class=\"en\">was going to be at</span>（本來以為將會出席）。這個用法還隱含「結果並未實現」的遺憾，與全文情緒完全契合。",
+ notes:[["A","<span class=\"en\">will be at</span>（現在式視角的未來）。主句已是過去式，時態不一致（此處不適用「普遍真理」的例外）。"],
+        ["B","<span class=\"en\">was going to be at</span>（過去未來式）。為正解，表「過去所預期、但未能實現的未來」。"],
+        ["C","<span class=\"en\">was at</span>（過去式）＝當時就在現場，與 <span class=\"en\">one day</span>（未來某天）矛盾。"],
+        ["D","<span class=\"en\">had been at</span>（過去完成式）表更早發生，與 <span class=\"en\">one day</span> 的未來指向完全相反。"]],
+ concept:"過去未來式（<span class=\"en\">was/were going to V</span>、<span class=\"en\">would V</span>）＋時態呼應（sequence of tenses）。<span class=\"en\">one day</span> 在過去語境中指「當時的未來」，是本題的關鍵線索。"},
+
+{n:77, stem:'... knocking over the painting I had started three days <span class="blank">__77__</span>.',
+ opts:[["A","ago"],["B","later"],["C","since my grandma’s death"],["D","before"]],
+ ans:"D",
+ exp:"關係子句的動詞是過去完成式 <span class=\"en\">had started</span>（比主句的過去更早）。與過去完成式搭配的「往前推算」用語是 <span class=\"en\">before</span>（之前），而 <span class=\"en\">ago</span> 只能搭配過去式。故 <span class=\"en\">three days before</span>＝（在那之前）三天前。",
+ notes:[["A","<span class=\"en\">ago</span>（以前）以「現在」為基準，只能搭配過去式（<span class=\"en\">I started it three days ago.</span>）。與 <span class=\"en\">had started</span> 併用是典型錯誤，也是本題最高比例的誘答。"],
+        ["B","<span class=\"en\">later</span>（之後）方向相反：畫作是「之前」開始的。"],
+        ["C","<span class=\"en\">since my grandma’s death</span> 須搭配完成式表「從那時持續到現在」，但 <span class=\"en\">three days since</span> 的語序與語意皆不成立。"],
+        ["D","<span class=\"en\">before</span>（之前）為正解，以「過去某時點」為基準往前推算。"]],
+ concept:"<span class=\"en\">ago</span>（以現在為基準，配過去式）vs. <span class=\"en\">before</span>（以過去為基準，配過去完成式）。這是高一時態單元最常考、也最容易混淆的一組。"},
+
+{n:78, stem:'“Yeah, I’m tired,” I said. “<span class="blank">__78__</span> and my fingers hurt.”',
+ opts:[["A","I painted before"],["B","I’ve painted until you come"],["C","I’ve been painting all morning"],["D","I was painting for the whole morning"]],
+ ans:"C",
+ exp:"要說明「現在很累」的原因，必須是「從早上持續畫到現在」的動作——這正是現在完成進行式（<span class=\"en\">have been + V-ing</span>）的功能：動作從過去持續到現在，並造成現在的結果（累、手指痛）。",
+ notes:[["A","<span class=\"en\">I painted before</span>（過去式）只敘述過去事實，與「現在的疲累」缺乏因果連結，也無「持續」之意。"],
+        ["B","<span class=\"en\">I’ve painted until you come</span>：時態混亂——<span class=\"en\">until</span> 子句用現在式 <span class=\"en\">come</span> 指未來，與主句完成式不相容，語意也不通。"],
+        ["C","<span class=\"en\">I’ve been painting all morning</span>（現在完成進行式）＋<span class=\"en\">all morning</span>（整個早上，延續到現在）。為正解。"],
+        ["D","<span class=\"en\">I was painting for the whole morning</span>（過去進行式）把時間完全推到過去，暗示現在已不再畫，無法解釋當下的疲累；若要用過去進行式，語境須明確切割為「過去的某段時間」。"]],
+ concept:"現在完成進行式的核心功能：「過去持續至今＋造成現在結果」。判準是看有沒有 <span class=\"en\">all morning / for two hours / since</span> 這類延續性時間副詞，以及當下結果（累、痛）。"},
+
+{n:79, stem:'I crouched to look under the table ... but couldn’t find her anywhere. “<span class="blank">__79__</span>”',
+ opts:[["A","Where has she been?"],["B","Where has she gone?"],["C","Where is she going?"],["D","Where will she be?"]],
+ ans:"B",
+ exp:"貓咪原本在窗邊睡覺，現在找不到了——說話者關心的是「牠跑去哪裡了（而且現在不在這裡）」。<span class=\"en\">Where has she gone?</span> 以現在完成式強調「離開的動作造成現在不在場的結果」。",
+ notes:[["A","<span class=\"en\">Where has she been?</span>（她去過哪裡？）問的是「過去一段時間的行蹤」，用於對方已回來時（<span class=\"en\">Where have you been? I’ve been waiting!</span>），但貓咪仍不見蹤影。"],
+        ["B","<span class=\"en\">Where has she gone?</span>（她跑去哪了？）為正解。<span class=\"en\">have gone to</span>＝去了（還沒回來）；對比 <span class=\"en\">have been to</span>＝去過（已回來）。"],
+        ["C","<span class=\"en\">Where is she going?</span>（她正要去哪？）需說話者看得見牠正在移動，與「到處找不到」矛盾。"],
+        ["D","<span class=\"en\">Where will she be?</span>（她將會在哪？）純猜測未來位置，與當下焦急尋找的情境不符。"]],
+ concept:"<span class=\"en\">have gone</span> vs. <span class=\"en\">have been</span> 的經典辨析（結果 vs. 經驗）＋現在完成式「過去動作、現在結果」的概念。"},
+
+{n:80, stem:'Just as I was about to take another, Tom’s eyes lit up, “<span class="blank">__80__</span> I’m starving—mind if I have a bite?”',
+ opts:[["A","How does that taste?"],["B","How has that tasted?"],["C","How is that tasting?"],["D","How is that tasted?"]],
+ ans:"A",
+ exp:"Tom 看到蛋糕、肚子餓了，想問的是「那個好吃嗎？」。<span class=\"en\">taste</span> 作「嚐起來（如何）」時是<b>連綴動詞（linking verb）</b>，表狀態而非進行中的動作，故用簡單現在式 <span class=\"en\">How does that taste?</span>",
+ notes:[["A","<span class=\"en\">How does that taste?</span>（那嚐起來怎麼樣？）為正解。<span class=\"en\">taste</span> 此處為不及物的連綴動詞，後接形容詞（<span class=\"en\">It tastes sweet.</span>）。"],
+        ["B","<span class=\"en\">How has that tasted?</span>（現在完成式）暗示「一段時間以來的味道」，語意荒謬。"],
+        ["C","<span class=\"en\">How is that tasting?</span>：感官連綴動詞一般不用進行式（<span class=\"en\">*It is tasting good</span>），屬狀態動詞（state verb）的進行式誤用。"],
+        ["D","<span class=\"en\">How is that tasted?</span>（被動語態）＝那個被品嚐得如何，語意不通；<span class=\"en\">taste</span> 作「嚐起來」時不用被動。"]],
+ concept:"狀態／感官動詞（<span class=\"en\">taste, look, sound, smell, feel</span>）作連綴動詞時「不用進行式、不用被動」的規則。這是 Unit 2 時態單元的重要例外。"},
+
+{n:81, stem:'I <span class="blank">__81__</span> it several times, but this was the first time I <span class="blank">__81__</span> it out loud.',
+ opts:[["A","was practicing saying; said"],["B","have practiced saying; have said"],["C","had been practiced saying; said"],["D","practiced saying; had said"]],
+ ans:"D",
+ exp:"第二格的關鍵句型是 <span class=\"en\">This <u>was</u> the first time + S + <b>had</b> + p.p.</span>——「這是第一次……」若主句為過去式（<span class=\"en\">was</span>），後面子句須用過去完成式。第一格 <span class=\"en\">practiced saying it several times</span>（練習說過好幾次）用過去式敘述已完成的練習，<span class=\"en\">practice</span> 後接動名詞 <span class=\"en\">saying</span>。故選 (D)。",
+ notes:[["A","<span class=\"en\">was practicing saying</span>（過去進行式）＋<span class=\"en\">several times</span> 不合：進行式強調「當時正在進行」，不搭配「次數」；且第二格 <span class=\"en\">said</span> 未用過去完成式，不符 <span class=\"en\">This was the first time ...</span> 的句型。"],
+        ["B","<span class=\"en\">have practiced; have said</span>（現在完成式）。全文為過去敘事（<span class=\"en\">this <u>was</u></span>），不可跳回現在完成式。"],
+        ["C","<span class=\"en\">had been practiced saying</span> 為被動語態（被練習），主詞是 <span class=\"en\">I</span>，語態錯誤。"],
+        ["D","<span class=\"en\">practiced saying; had said</span>。為正解：<span class=\"en\">practice + V-ing</span>＋<span class=\"en\">This was the first time I had said it out loud.</span>"]],
+ concept:"<span class=\"en\">It/This is the first time + S + have p.p.</span> ／ <span class=\"en\">It/This was the first time + S + had p.p.</span> 的固定句型，加上 <span class=\"en\">practice + V-ing</span> 的動詞句型與主被動判斷。一題同時考三個觀念，是本大題的壓軸。"}
+]});
+
+/* ============ VII. 混合題 (6%) ============ */
+SECTIONS.push({id:"s7", title:"VII. 混合題（6%）", note:"第 82 題為多選（一個選項錯，全錯），第 83 題為字義配對的手寫題。兩題都在考「跨段落統整」與「用自己的話定義單字」。",
+ passages:[{title:"Passage　Taiwan’s Endemic Species（全文）",
+  html:"As human society continues to expand, many animals are faced with the reality of habitat loss and fewer food sources. Several endemic (特有) species in Taiwan have since developed different ways of adapting to the environment. Through learning about their behaviour, we are able to better understand how their lives have been affected.<br><br>The Taiwan blue magpie is one of the most famous bird species on the island. This bird features blue feathers, a red beak, and a long tail. What’s also unique about these birds is their ability to adapt to life with humans. In Taipei city, a pair of blue magpies were seen building their nest out of clothing hangers. They took hangers from nearby homes and arranged them carefully on trees. Despite living among humans these birds still found a way to use the things they could get and achieve their goal of building a safe place for their young.<br><br>The Formosan black bear is a beloved mascot of Taiwan. Despite this fame, this species is officially endangered (瀕危), with the number of bears dropping due to land development. One of the bears, named Aziman Siking after a Bunung legend, had repeatedly visited a village in Hualien over the past few years. As the bear’s living space grew smaller, it began to wander closer to the village and catch the villagers’ chickens. In order to avoid possible danger for both man and bear, Aziman was finally caught and sent to Taipei Zoo, where it will stay for the rest of its life.<br><br>The Formosan rock monkey is known for its wit when facing humans. Groups of these monkeys can be found in National Sun Yat-sen University (中山大學), where they often go searching for food on campus during the colder months, scaring students and teachers in the process. At first, paint guns and cages were used to stop and trap the monkeys. However, in recent years, the university has changed its methods, providing classes and camps for students to learn more about the monkeys and get along with them peacefully. This shows that it’s possible for humans and animals to live in harmony in the same space."}],
+ items:[
+{n:82, stem:'According to these passages, which ONES of the following choices are correct?（多選，3%；一個選項錯，全錯）',
+ opts:[["A","All three passages are about how humans and animals are not getting along."],["B","Some blue magpies use manmade materials to build their nests."],["C","The examples show how animals change their actions to fit in with human life."],["D","Aziman the bear kept going to the village because it felt threatened by humans."],["E","Sun Yat-sen University now deals with monkeys in a friendlier way than before."]],
+ ans:"(B)(C)(E)",
+ exp:"本題須逐一檢驗五個敘述。<b>(B)</b> 藍鵲用衣架（<span class=\"en\">clothing hangers</span>）築巢＝使用人造材料，正確。<b>(C)</b> 第一段主題句 <span class=\"en\">have since developed different ways of adapting to the environment</span>（發展出不同的適應方式）正是三個例子的共同主旨，正確。<b>(E)</b> 中山大學由漆彈與籠子改為開課與營隊（<span class=\"en\">has changed its methods ... get along with them peacefully</span>），確實更友善，正確。",
+ notes:[["A","錯。<span class=\"en\">All three passages</span>（全部三段）過度概括：第四段結尾明言 <span class=\"en\">it’s possible for humans and animals to live in harmony</span>（人與動物可以和諧共存），並非「相處不睦」。注意 <span class=\"en\">All / Every / Only</span> 這類絕對字眼常是錯誤選項的標記。"],
+        ["B","對。<span class=\"en\">manmade materials</span>（人造材料）＝<span class=\"en\">clothing hangers</span>（衣架）的上位改寫；<span class=\"en\">build their nest out of ...</span>＝用……製成。"],
+        ["C","對。對應第一段的主旨句 <span class=\"en\">ways of adapting to the environment</span>；<span class=\"en\">fit in with</span>（融入、適應）為 <span class=\"en\">adapt to</span> 的同義改寫。"],
+        ["D","錯。因果錯置：原文是 <span class=\"en\">As the bear’s living space grew smaller</span>（棲地縮小）才靠近村落抓雞，不是因為 <span class=\"en\">felt threatened by humans</span>（感到被人類威脅）。文中也從未提及熊的「感受」。"],
+        ["E","對。<span class=\"en\">However, in recent years, the university has changed its methods</span>＋提供課程與營隊，正是 <span class=\"en\">friendlier ... than before</span> 的依據。"]],
+ concept:"跨段落主旨統整＋單一選項的事實查核。多選題的拆解策略：① 看到 All／Only／Never 等絕對詞先提高警覺；② 每個選項都要在原文「指出那一行」；③ 特別檢查因果關係是否被偷換（如 (D)）。"},
+
+{n:83, stem:'Which word from the passages has the meaning closest to “putting many items in a certain order”?（手寫，3%）',
+ free:true,
+ ans:"arrange / arranged / arranging",
+ exp:"題目定義為「把許多物品依某種順序擺放」＝排列、整理。原文第二段：<span class=\"en\">They took hangers from nearby homes and <u>arranged</u> them carefully on trees.</span>（牠們把衣架小心地排放在樹上）。故答案為 <span class=\"en\">arrange</span>（依答案卷，<span class=\"en\">arrange / arranged / arranging</span> 皆可）。",
+ notes:[["①","<span class=\"en\">arrange</span>（vt. 排列、安排；名詞 <span class=\"en\">arrangement</span>）。本題為「以定義找字」（definition matching），作答時務必回原文確認拼字，並注意題目若未限定形式，動詞原形與變化形通常都接受。"],
+        ["②","常見失分原因：寫出語意相近但原文沒有的字（如 <span class=\"en\">organize</span>、<span class=\"en\">place</span>）。此類題型規定 <span class=\"en\">from the passages</span>（從文章中找），必須是原文出現過的字。"],
+        ["③","另一常見失分是拼字錯誤（<span class=\"en\">arrenge / arrange</span>）。本大題「錯一個字母即不給分」，請養成回頭核對拼字的習慣。"]],
+ concept:"以英文定義反推單字（paraphrase → word），測驗你是否能在長文中定位同義表達。這也是 GSAT 混合題與 EMI 課程閱讀最核心的能力：用英文理解英文，而非翻成中文再找。"}
+]});
+
+/* ============ VIII. Vocabulary in Context (6%) ============ */
+SECTIONS.push({id:"s8", title:"VIII. Vocabulary in Context（6%，一題一分；錯一個字母全錯）", note:"給首字母的填空題，考的是「語境＋拼字」雙重能力。答案依學校答案卷公布。", items:[
+{n:84, stem:'After being together for years, I realized my first i<span class="blank">_____</span>n of him was wrong.',
+ free:true, ans:"impression",
+ exp:"<span class=\"en\">first impression</span>（第一印象）為固定搭配。語境：相處多年後才發現「第一印象」是錯的——<span class=\"en\">After being together for years</span> 與 <span class=\"en\">first</span> 形成時間對比。",
+ notes:[["詞性","<span class=\"en\">impression</span>（n. 印象）；動詞 <span class=\"en\">impress</span>（使印象深刻），形容詞 <span class=\"en\">impressive</span>（令人印象深刻的）／<span class=\"en\">impressed</span>（感到印象深刻的）。"],
+        ["用法","<span class=\"en\">make a good impression on sb.</span>（給某人好印象）、<span class=\"en\">under the impression that ...</span>（以為……）。"],
+        ["拼字","im-pres-sion，雙寫 <span class=\"en\">s</span>，字尾 <span class=\"en\">-sion</span>。本題首尾字母已給（i…n），務必確認中間拼字完整。"]],
+ concept:"固定搭配（<span class=\"en\">first impression</span>）＋名詞字尾 <span class=\"en\">-sion</span> 的構詞。首字母提示題的解法：先用中文想到概念，再用「詞性＋字尾」確認形式。"},
+
+{n:85, stem:'Our class was discussing how to decorate our classroom, and i<span class="blank">_____</span>n came. I raised my hand and said, “Why don\'t we turn our classroom into a haunted house?”',
+ free:true, ans:"inspiration",
+ exp:"後句是忽然想到的好主意，故為 <span class=\"en\">inspiration</span>（靈感）。<span class=\"en\">Inspiration came.</span>＝靈感來了，是常見的擬人化表達。",
+ notes:[["詞性","<span class=\"en\">inspiration</span>（n. 靈感、啟發）；動詞 <span class=\"en\">inspire</span>（啟發、激勵），形容詞 <span class=\"en\">inspiring</span>（激勵人心的）／<span class=\"en\">inspired</span>（受啟發的）。"],
+        ["用法","<span class=\"en\">a source of inspiration</span>（靈感來源）、<span class=\"en\">inspire sb. to V</span>（激勵某人去做）。"],
+        ["拼字","in-spi-ra-tion。注意 <span class=\"en\">inspire</span> → <span class=\"en\">inspiration</span> 時 <span class=\"en\">e</span> 去掉、<span class=\"en\">i</span> 變 <span class=\"en\">a</span>，屬不規則的名詞化。"]],
+ concept:"字詞的語境推論＋動詞→名詞的構詞變化。此題同時測驗你是否能從「舉手提出新點子」這個情境動作，回推抽象名詞。"},
+
+{n:86, stem:'To any parent, nothing is more s<span class="blank">_____</span>ing than having the noisy kids out of the house and enjoying a little quiet time all to themselves.',
+ free:true, ans:"satisfying（或 soothing）",
+ exp:"句型 <span class=\"en\">nothing is more + adj. + than ...</span>（沒有什麼比……更……）為最高級的變體。對父母而言，吵鬧的孩子外出、能獨享安靜時光，是最「令人滿足／令人舒心」的事。答案卷接受 <span class=\"en\">satisfying</span> 或 <span class=\"en\">soothing</span>。",
+ notes:[["satisfying","<span class=\"en\">satisfying</span>（adj. 令人滿足的；動詞 <span class=\"en\">satisfy</span>，名詞 <span class=\"en\">satisfaction</span>）。注意現在分詞 <span class=\"en\">-ing</span> 修飾「事物（令人……的）」，過去分詞 <span class=\"en\">satisfied</span> 修飾「人（感到……的）」。本題空格後有 <span class=\"en\">-ing</span>，正是提示。"],
+        ["soothing","<span class=\"en\">soothing</span>（adj. 使人平靜的、舒緩的；動詞 <span class=\"en\">soothe</span> 安撫）。語意聚焦「安靜帶來的舒緩」，亦可接受。"],
+        ["常見錯誤","寫成 <span class=\"en\">satisfied</span>（感到滿足的）會造成「事物感到滿足」的錯誤，屬 <span class=\"en\">-ing/-ed</span> 分詞形容詞混用。"]],
+ concept:"<span class=\"en\">-ing</span> 與 <span class=\"en\">-ed</span> 分詞形容詞的分工（修飾事物／修飾人）＋<span class=\"en\">nothing is more ... than</span> 的最高級句型。"},
+
+{n:87, stem:'I s<span class="blank">_____</span>ped the end of the story because I already knew what would happen next.',
+ free:true, ans:"skipped",
+ exp:"因為已經知道後續，所以「跳過」結局。<span class=\"en\">skip</span>（v. 跳過、略過；也指跳繩、蹺課）。空格後有 <span class=\"en\">-ped</span>，提示雙寫子音的過去式拼法。",
+ notes:[["詞性與變化","<span class=\"en\">skip - skipped - skipped</span>。單音節、短母音＋單一子音結尾 → 加 <span class=\"en\">-ed</span> 前須雙寫 <span class=\"en\">p</span>（同類：<span class=\"en\">stop → stopped</span>、<span class=\"en\">plan → planned</span>）。"],
+        ["用法","<span class=\"en\">skip a chapter</span>（跳過一章）、<span class=\"en\">skip class</span>（蹺課）、<span class=\"en\">skip breakfast</span>（不吃早餐）。"],
+        ["常見錯誤","寫 <span class=\"en\">skiped</span>（少一個 p）即不給分；也要避免誤寫 <span class=\"en\">slipped</span>（滑倒）這個形近字。"]],
+ concept:"動詞過去式的拼字規則（雙寫子音）＋由因果連接詞 <span class=\"en\">because</span> 推論動詞語意。本題失分多在拼字而非理解，請特別留意。"},
+
+{n:88, stem:'Thanks to smartphones, few people need to m<span class="blank">_____</span>e phone numbers anymore.',
+ free:true, ans:"memorize",
+ exp:"<span class=\"en\">Thanks to smartphones</span>（多虧智慧型手機）＋<span class=\"en\">few people ... anymore</span>（幾乎沒有人再……）＝不必再「背」電話號碼。<span class=\"en\">memorize</span>（v. 記住、背熟）。",
+ notes:[["詞性","<span class=\"en\">memorize</span>（vt. 記憶、背誦）；名詞 <span class=\"en\">memory</span>（記憶、回憶），形容詞 <span class=\"en\">memorable</span>（難忘的）。"],
+        ["用法","<span class=\"en\">memorize vocabulary / a speech</span>。注意 <span class=\"en\">memorize</span> 強調「刻意背熟」，與 <span class=\"en\">remember</span>（記得、想起）語意不同。"],
+        ["拼字","mem-o-rize，字尾 <span class=\"en\">-ize</span>（英式亦可 <span class=\"en\">-ise</span>）。空格後給 <span class=\"en\">e</span>，提示字尾為 <span class=\"en\">-ize</span>。"]],
+ concept:"<span class=\"en\">memorize</span> vs. <span class=\"en\">remember</span> 的語意區辨＋動詞字尾 <span class=\"en\">-ize</span>（使……化）的構詞。另測驗 <span class=\"en\">few</span>（幾乎沒有，否定意味）與 <span class=\"en\">anymore</span> 的搭配理解。"},
+
+{n:89, stem:'To our d<span class="blank">_____</span>t, we didn\'t have a day off, even though we were in the storm zone. We sighed in frustration when we read the news.',
+ free:true, ans:"disappointment",
+ exp:"句型 <span class=\"en\">To one’s + 情緒名詞</span>（令某人……的是）。後文 <span class=\"en\">We sighed in frustration</span>（我們沮喪地嘆氣）確認是負面情緒，故為 <span class=\"en\">disappointment</span>（失望）。",
+ notes:[["詞性","<span class=\"en\">disappointment</span>（n. 失望）；動詞 <span class=\"en\">disappoint</span>（使失望），形容詞 <span class=\"en\">disappointed</span>（感到失望的，修飾人）／<span class=\"en\">disappointing</span>（令人失望的，修飾事物）。"],
+        ["用法","<span class=\"en\">To our disappointment, ...</span>（令我們失望的是……）；同類句型：<span class=\"en\">to my surprise / to our delight / much to his joy</span>。"],
+        ["易混淆","注意不要填 <span class=\"en\">delight</span>（高興）——雖然同樣是 d…t 且常用於 <span class=\"en\">To our delight</span>，但與 <span class=\"en\">sighed in frustration</span> 的負面語氣矛盾。這是本題設計最精巧之處：首尾字母相同，必須靠語境判斷。"]],
+ concept:"<span class=\"en\">To one’s + 名詞</span> 的情緒句型＋由後句語氣（<span class=\"en\">frustration</span>）決定情緒方向。提醒：首字母提示題仍須以語境為最終判準，不可只憑字母猜字。"}
+]});
+
+/* ============ IX. Translation (7%) ============ */
+SECTIONS.push({id:"s9", title:"IX. Translation　翻譯（7%）", note:"（90）–（94）一題一分，錯一個字或時態錯即全錯，每格限一字；（95）兩分，每格不限字數，分段扣分。答案依學校答案卷公布。",
+ passages:[{title:"題目與答案對照",
+  html:"<b>中文：</b>Tom 看起來很（90）消沉，很可能是牠的主人都沒有（91）認真對待牠的咆嘯，甚至是（92）忽視牠的叫聲。甚至當 Tom 在為家園把關，對峙陌生人時，牠主人在家裡點著（93）有玫瑰香氣的芳香蠟燭，（94）手緊緊抓著運動腳踏車，內心咕噥著有人能告訴（95）現在這隻狗又再對誰咆嘯嗎？<br><br><b>英文：</b>Tom looks (90) <u>de_____</u>, probably because his keeper never (91) <u>_____</u> his barking <u>_____</u>. His howling (92) <u>_____ ig_____</u> most of the time. Even when Tom is guarding their sweet home and dealing with strangers, his keeper just sits nearby lighting candles that (93) <u>s_____ _____</u> roses, (94) <u>h_____ on _____</u> the handles of her stationary bike, and murmurs, “Can anyone tell me (95) <u>who _____</u> again now?”"}],
+ items:[
+{n:90, stem:'Tom looks (90) <span class="blank">de_____</span>（消沉）',
+ free:true, ans:"depressed",
+ exp:"<span class=\"en\">look + adj.</span>（看起來……）為連綴動詞句型，故填形容詞。「消沉」＝<span class=\"en\">depressed</span>（情緒低落的）。以 <span class=\"en\">de-</span> 開頭已給提示。",
+ notes:[["詞性","<span class=\"en\">depressed</span>（adj. 沮喪的，修飾人）；<span class=\"en\">depressing</span>（adj. 令人沮喪的，修飾事物）；名詞 <span class=\"en\">depression</span>，動詞 <span class=\"en\">depress</span>。本句主詞是 Tom（感受者），故用 <span class=\"en\">-ed</span>。"],
+        ["用法","<span class=\"en\">look / feel / seem depressed</span>。注意不可寫成 <span class=\"en\">depress</span>（動詞）或 <span class=\"en\">depression</span>（名詞），詞性錯即不給分。"],
+        ["延伸","同義字 <span class=\"en\">down</span>、<span class=\"en\">gloomy</span>、<span class=\"en\">low-spirited</span>，但本題限定首字母 <span class=\"en\">de-</span>。"]],
+ concept:"連綴動詞 <span class=\"en\">look</span> 後接形容詞＋<span class=\"en\">-ed / -ing</span> 分詞形容詞的主客體分工。"},
+
+{n:91, stem:'... probably because his keeper never (91) <span class="blank">_____</span> his barking <span class="blank">_____</span>（認真對待）',
+ free:true, ans:"takes / treats ... seriously",
+ exp:"「認真對待某事」＝<span class=\"en\">take sth. seriously</span>（或 <span class=\"en\">treat sth. seriously</span>）。主詞 <span class=\"en\">his keeper</span> 為第三人稱單數，且全句為現在式敘述（<span class=\"en\">Tom looks ...</span>），故動詞須加 <span class=\"en\">-s</span>：<span class=\"en\">takes / treats</span>。<span class=\"en\">never</span> 本身即否定，動詞不可再變否定形。",
+ notes:[["正解形式","<span class=\"en\">takes his barking seriously</span>／<span class=\"en\">treats his barking seriously</span>。注意受詞 <span class=\"en\">his barking</span> 插在動詞與副詞之間（<span class=\"en\">take + O + seriously</span>）。"],
+        ["時態與單複數","本大題明示「時態錯全錯」。常見失分：寫 <span class=\"en\">take</span>（漏掉第三人稱單數 -s）或 <span class=\"en\">took</span>（時態錯）。"],
+        ["副詞拼字","<span class=\"en\">seriously</span>（adv.）＝<span class=\"en\">serious</span>＋<span class=\"en\">-ly</span>；不可寫 <span class=\"en\">serious</span>，此處修飾動詞須用副詞。"]],
+ concept:"固定搭配 <span class=\"en\">take sth. seriously</span>＋現在式第三人稱單數動詞變化＋副詞的形式與位置。"},
+
+{n:92, stem:'His howling (92) <span class="blank">_____ ig_____</span>（被忽視）most of the time.',
+ free:true, ans:"is ignored",
+ exp:"主詞 <span class=\"en\">His howling</span>（牠的嚎叫）是「被忽視」的對象，故用被動語態 <span class=\"en\">be + p.p.</span>。<span class=\"en\">howling</span> 為動名詞作主詞，視為單數，be 動詞用 <span class=\"en\">is</span>；<span class=\"en\">most of the time</span>（大多時候）表習慣，故用現在式。",
+ notes:[["正解形式","<span class=\"en\">is ignored</span>。<span class=\"en\">ignore</span>（vt. 忽視）→ 過去分詞 <span class=\"en\">ignored</span>。"],
+        ["常見錯誤","寫 <span class=\"en\">are ignored</span>（主詞單複數判斷錯）或 <span class=\"en\">is ignoring</span>（主動進行式，語意變成「牠的嚎叫在忽視別人」）。"],
+        ["拼字","i-g-n-o-r-e-d，注意 <span class=\"en\">ignore</span> 字尾 <span class=\"en\">e</span> 去掉再加 <span class=\"en\">-ed</span>。"]],
+ concept:"被動語態的判斷（主詞是動作的接受者）＋動名詞作主詞的單數一致性。本題是全卷「語態」觀念的集中測驗。"},
+
+{n:93, stem:'... lighting candles that (93) <span class="blank">s_____ _____</span> roses（有玫瑰香氣的）',
+ free:true, ans:"smell like / smell of",
+ exp:"關係子句的先行詞是 <span class=\"en\">candles</span>（複數），故動詞用原形 <span class=\"en\">smell</span>。「聞起來像／散發……的香氣」＝<span class=\"en\">smell like + N</span> 或 <span class=\"en\">smell of + N</span>。",
+ notes:[["正解形式","<span class=\"en\">smell like roses</span>／<span class=\"en\">smell of roses</span>（答案卷兩者皆可）。"],
+        ["語意差異","<span class=\"en\">smell like</span> 強調「氣味相似」；<span class=\"en\">smell of</span> 強調「帶有某物的氣味」。兩者在此皆通。"],
+        ["單複數","關係代名詞 <span class=\"en\">that</span> 代替 <span class=\"en\">candles</span>（複數），動詞不加 <span class=\"en\">-s</span>。若寫 <span class=\"en\">smells</span> 即錯——這是本題最常見的失分點。"]],
+ concept:"感官連綴動詞 <span class=\"en\">smell</span> 的搭配（<span class=\"en\">smell like / of + 名詞</span>；<span class=\"en\">smell + 形容詞</span>）＋關係子句中動詞與先行詞的一致。"},
+
+{n:94, stem:'(94) <span class="blank">h_____ on _____</span> the handles of her stationary bike（手緊緊抓著）',
+ free:true, ans:"holds on to / holding on to",
+ exp:"<span class=\"en\">hold on to + N</span>（緊緊抓住、抓牢）。此處與前後動詞並列（<span class=\"en\">sits nearby lighting ..., ___ ..., and murmurs ...</span>），答案卷接受兩種形式：若視為與 <span class=\"en\">murmurs</span> 對等的主要動詞，用 <span class=\"en\">holds on to</span>；若視為伴隨動作的分詞構句，用 <span class=\"en\">holding on to</span>。",
+ notes:[["正解形式","<span class=\"en\">holds on to</span>（與 sits／murmurs 對等並列）或 <span class=\"en\">holding on to</span>（分詞表同時進行的動作）。"],
+        ["片語辨析","<span class=\"en\">hold on to</span>（抓牢、保留）／<span class=\"en\">hold on</span>（等一下、別掛斷）／<span class=\"en\">hold back</span>（忍住、阻止）。三者語意差異大，不可混用。"],
+        ["常見錯誤","漏掉 <span class=\"en\">to</span>（寫成 <span class=\"en\">holds on the handles</span>）即不給分；或寫 <span class=\"en\">held</span>（時態錯）。"]],
+ concept:"動詞片語 <span class=\"en\">hold on to</span> 的完整形式＋對等連接與分詞構句的兩種合法寫法。這題測驗你是否理解「句中三個動作如何串接」。"},
+
+{n:95, stem:'“Can anyone tell me (95) <span class="blank">who _____</span> again now?”（現在這隻狗又再對誰咆嘯嗎？）',
+ free:true, ans:"who the dog is barking at (howling at)",
+ exp:"<span class=\"en\">tell me</span> 後接「間接問句（名詞子句）」，語序必須是 <b>疑問詞 + 主詞 + 動詞</b>，不可倒裝。疑問詞 <span class=\"en\">who</span> 是介系詞 <span class=\"en\">at</span> 的受詞（<span class=\"en\">bark at sb.</span> 對某人吠），故介系詞留在句尾：<span class=\"en\">who the dog is barking at</span>。<span class=\"en\">now</span> 表此刻正在進行，用現在進行式。",
+ notes:[["正解形式","<span class=\"en\">who the dog is barking at (howling at)</span>。答案卷另接受 <span class=\"en\">who the person the dog is barking at is</span> 與 <span class=\"en\">who is the person the dog is barking at</span> 兩種寫法。"],
+        ["語序","最常見錯誤是寫成 <span class=\"en\">who is the dog barking at</span>（保留疑問句倒裝）。間接問句必須改為陳述語序——本題 2 分且分段扣分，語序錯會直接失分。"],
+        ["介系詞","<span class=\"en\">bark at sb.</span>（對某人吠叫）的 <span class=\"en\">at</span> 不可省略；<span class=\"en\">howl at</span> 亦同。"]],
+ concept:"間接問句（embedded question）的語序＋介系詞留尾（preposition stranding）＋現在進行式。這是全卷最高階的語法整合題，也是 GSAT 翻譯與寫作的高頻考點。"}
+]});
+
+/* ================= RENDER ================= */
+const esc = s => s;
+function optList(it){
+  if(!it.opts) return "";
+  return '<ul class="opts">'+it.opts.map(o=>'<li><b>('+o[0]+')</b><span>'+o[1]+'</span></li>').join("")+'</ul>';
+}
+function noteList(it){
+  if(!it.notes) return "";
+  const key = String(it.ans||"");
+  return '<ul>'+it.notes.map(n=>{
+    const bare = n[0].replace(/[()]/g,"");
+    const hit = key.replace(/[()]/g,"").split(/\s+/).includes(bare) || key.replace(/[()]/g,"") === bare;
+    return '<li class="'+(hit?"ok":"no")+'"><span class="ol">'+n[0].replace(/^\(?|\)?$/g,"")+'</span><span>'+n[1]+'</span></li>';
+  }).join("")+'</ul>';
+}
+function qCard(it){
+  const id = "q"+it.n;
+  return '<article class="q" id="'+id+'">'
+    +'<div class="qhead"><span class="qno">'+it.n+'.</span><div class="stem">'+it.stem+'</div></div>'
+    + optList(it)
+    +'<button type="button" class="toggle" aria-expanded="false" aria-controls="sol'+it.n+'" data-n="'+it.n+'">📖 參考解答：第 '+it.n+' 題詳解</button>'
+    +'<div class="sol" id="sol'+it.n+'" hidden>'
+      +'<p class="ansline">答案：<span class="key">'+it.ans+'</span></p>'
+      +'<h4>① 題目詳解</h4><p>'+it.exp+'</p>'
+      +(it.notes?'<h4>② '+(it.free?'關鍵提醒與用法':'各選項詳解')+'</h4>'+noteList(it):'')
+      +'<h4>③ 本題測驗的觀念</h4><div class="concept">'+it.concept+'</div>'
+      +(it.script?'<h4>聽力原文</h4><p class="en">'+it.script+'</p>':'')
+    +'</div></article>';
+}
+const paper = document.getElementById("paper");
+const nav = document.getElementById("jumpnav");
+let html = "";
+SECTIONS.forEach(sec=>{
+  html += '<h3 class="sec" id="'+sec.id+'">'+sec.title+'</h3>';
+  if(sec.note) html += '<p class="sec-note">'+sec.note+'</p>';
+  (sec.passages||[]).forEach(p=>{
+    html += '<div class="passage"><div class="ptitle">'+p.title+'</div><p>'+p.html+'</p>'
+      + (p.bank?'<div class="bank">'+p.bank.map(b=>'<span>'+b+'</span>').join("")+'</div>':'')
+      + '</div>';
+  });
+  html += sec.items.map(qCard).join("");
+  const short = sec.title.split("　")[0].replace(/\s*\(.*$/,"");
+  nav.insertAdjacentHTML("beforeend",'<a href="#'+sec.id+'">'+short+'</a>');
+});
+nav.insertAdjacentHTML("beforeend",'<a href="#care-top">第二部分 · 心情覆盤</a>');
+paper.innerHTML = html;
+
+document.addEventListener("click", e=>{
+  const b = e.target.closest(".toggle");
+  if(!b) return;
+  const sol = document.getElementById("sol"+b.dataset.n);
+  const open = b.getAttribute("aria-expanded")==="true";
+  b.setAttribute("aria-expanded", String(!open));
+  sol.hidden = open;
+  b.textContent = (open?"📖 參考解答：第 ":"📕 收回詳解：第 ")+b.dataset.n+" 題詳解";
+});
+function setAll(open){
+  document.querySelectorAll(".toggle").forEach(b=>{
+    b.setAttribute("aria-expanded", String(open));
+    document.getElementById("sol"+b.dataset.n).hidden = !open;
+    b.textContent = (open?"📕 收回詳解：第 ":"📖 參考解答：第 ")+b.dataset.n+" 題詳解";
+  });
+}
+const qjump = document.getElementById("qjump"), gotoMsg = document.getElementById("gotoMsg");
+const smooth = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+function goToQuestion(n){
+  const el = document.getElementById("q"+n);
+  if(!el) return false;
+  const b = el.querySelector(".toggle");
+  if(b && b.getAttribute("aria-expanded") !== "true") b.click();
+  el.scrollIntoView({behavior: smooth, block: "start"});
+  document.querySelectorAll(".q.flash").forEach(x=>x.classList.remove("flash"));
+  el.classList.add("flash");
+  setTimeout(()=>el.classList.remove("flash"), 2000);
+  return true;
+}
+qjump.addEventListener("input", ()=>{
+  const v = qjump.value.trim();
+  if(!v){ gotoMsg.textContent = "輸入數字即跳到該題並展開詳解（選擇題 1–82，非選題 83–95）"; gotoMsg.classList.remove("warn"); return; }
+  const n = parseInt(v, 10);
+  if(!(n >= 1 && n <= 95)){ gotoMsg.textContent = "請輸入 1 到 95 之間的題號"; gotoMsg.classList.add("warn"); return; }
+  gotoMsg.classList.remove("warn");
+  gotoMsg.textContent = goToQuestion(n) ? "已跳至第 "+n+" 題，詳解已展開" : "找不到第 "+n+" 題";
+});
+qjump.addEventListener("keydown", e=>{ if(e.key === "Enter"){ e.preventDefault(); const n = parseInt(qjump.value, 10); if(n >= 1 && n <= 95) goToQuestion(n); } });
+
+document.getElementById("openAll").addEventListener("click",()=>setAll(true));
+document.getElementById("closeAll").addEventListener("click",()=>setAll(false));
+
+/* ================= PART 2 ================= */
+const PROMPTS = [
+ {id:"r1", zh:"這次段考，哪些題目對你來說是「容易的」？哪些是「困難的」？", en:"Which questions felt easy for you? Which ones felt difficult? (You may write in Chinese or English.)",
+  ph:"例：聽力 Part A-I 很順；文意選填 [D] 的 59 與 66 題讓我猶豫很久……"},
+ {id:"r2", zh:"你覺得「容易」與「困難」的原因分別是什麼？", en:"Why were they easy or difficult? Think about the reason, not just the result.",
+  ph:"例：容易是因為課本克漏字我讀過三次；困難是因為我只背中文，不熟 suggest 和 confirm 的語氣差別……"},
+ {id:"r3", zh:"如果再覆盤一次，下次準備英文段考時，你會做哪些調整？又會「維持」哪些有效的策略？", en:"What will you change next time? And which strategies worked well, so you will keep them?",
+  ph:"我要調整的：…\n我要維持的：…"},
+ {id:"r4", zh:"考完試後，你的心情是什麼？寫下一段給自己的打氣與鼓勵。", en:"How do you feel after the exam? Write a few words to cheer yourself up.",
+  ph:"寫給自己："}
+];
+const careEl = document.getElementById("care");
+careEl.innerHTML =
+ '<div class="care" id="care-top">'
+ +'<h3>開場白　A Word Before You Begin</h3>'
+ +'<div class="bi">'
+   +'<div><div class="lab">中文</div><p>考卷上的分數，只記錄一次考試結果。卻無法記載你翻開課本的每個晚上，你反覆唸過的每個單字，你熬夜振筆疾書寫作業、刷題目的努力，都深銘刻在這一段學習時光，沒有任何人、任何事物可以抺滅。老師想告訴你：你付出的時間與努力，不論這次是否換來好成績，都真實地存在，也都值得你肯定自己。先深呼吸，然後溫柔堅定地陪自己看一遍這份考卷。</p></div>'
+   +'<div><div class="lab">English</div><div class="en"><p>A single score doesn’t define you. It can’t capture the late nights you spent reading, the words you practiced over and over, or the hard work you poured into preparing. Every hour you invested is real, and permanently yours—no grade can diminish that. Take a deep breath. Honor the effort you put in, and review the monthly test with care and confidence.</p></div></div>'
+ +'</div>'
+ +'<div class="anchor-quote"><p><strong>第一點　接納不完美的自己：</strong>允許自己有做不好或不符合他人期待的時候。當你接納了自己的不足，內心不再感到羞愧或恐懼時，別人的評價自然無法再對你造成傷害。</p>'
+ +'<p><strong>第二點　建立支持系統：</strong>多與能給予你正向回饋、理解並接納你本然樣貌的人相處。一個溫暖且有力量的社交圈，能有效稀釋外界負面評價對你心理造成的消耗。</p></div>'
+ +'</div>'
+ +'<div class="care"><h3>四題簡答：把心裡的話寫下來</h3>'
+ + PROMPTS.map((p,i)=>'<label class="qlab" for="'+p.id+'">'+(i+1)+'. '+p.zh+'<span class="sub">'+p.en+'</span></label>'
+     +'<textarea id="'+p.id+'" placeholder="'+p.ph+'"></textarea>').join("")
+ +'<div class="tools"><button type="button" id="copyAll">複製我的四題回答</button><button type="button" id="clearAll">清空重寫</button></div>'
+ +'<p class="saved" id="savedMsg"></p>'
+ +'</div>';
+
+const msg = document.getElementById("savedMsg");
+function load(){
+  PROMPTS.forEach(p=>{
+    try{ const v = localStorage.getItem("rev71_"+p.id); if(v) document.getElementById(p.id).value = v; }catch(e){}
+  });
+}
+load();
+careEl.addEventListener("input", e=>{
+  if(e.target.tagName!=="TEXTAREA") return;
+  try{ localStorage.setItem("rev71_"+e.target.id, e.target.value); msg.textContent = "已暫存於這台裝置的瀏覽器（"+new Date().toLocaleTimeString("zh-TW",{hour:"2-digit",minute:"2-digit"})+"）"; }catch(err){ msg.textContent = "此瀏覽器無法暫存，請記得自行複製保存。"; }
+});
+document.getElementById("copyAll").addEventListener("click", async ()=>{
+  const text = "第一次期中考英語文覆盤（第71屆）\n\n" + PROMPTS.map((p,i)=>(i+1)+". "+p.zh+"\n"+(document.getElementById(p.id).value||"（未填寫）")).join("\n\n");
+  try{ await navigator.clipboard.writeText(text); msg.textContent = "已複製，可直接貼到 Google 表單、筆記或與老師分享。"; }
+  catch(err){
+    const t = document.getElementById("r1"); t.focus(); t.select();
+    msg.textContent = "這個瀏覽器不允許自動複製，請手動選取文字後複製（Ctrl/Cmd + C）。";
+  }
+});
+document.getElementById("clearAll").addEventListener("click", ()=>{
+  PROMPTS.forEach(p=>{ document.getElementById(p.id).value=""; try{ localStorage.removeItem("rev71_"+p.id); }catch(e){} });
+  msg.textContent = "已清空，隨時可以重新開始。";
+});
+</script>
